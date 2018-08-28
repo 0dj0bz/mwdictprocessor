@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="car"><ew>car</ew><subj>VH-1a#VH-1b#RR-1b#AV-1c#AE-3</subj><hw>car</hw><sound><wav>car00001.wav</wav><wpr>!k@r</wpr></sound><pr>ˈkär, <it>dialect also</it> ˈkȯr, ˈkyär</pr><fl>noun</fl><et>Middle English <it>carre,</it> from Anglo-French, from Latin <it>carra,</it> plural of <it>carrum,</it> alteration of <it>carrus,</it> of Celtic origin; akin to Old Irish &amp; Middle Welsh <it>carr</it> vehicle; akin to Latin <it>currere</it> to run</et><def><date>14th century</date> <sn>1</sn> <dt> :a vehicle moving on wheels: as</dt>  <sn>a</sn> <ssl>archaic</ssl> <dt>:<sx>carriage</sx> <sx>chariot</sx></dt>  <sn>b</sn> <dt>:a vehicle designed to move on rails (as of a railroad)</dt>  <sn>c</sn> <dt>:<sx>automobile</sx> </dt> <sn>2</sn> <dt>:the passenger compartment of an elevator</dt> <sn>3</sn> <dt>:the part of an airship or balloon that carries the passengers and cargo</dt></def></entry>
+	<entry id="CAR"><ew>CAR</ew><subj>AE</subj><hw>CAR</hw><fl>abbreviation</fl><def><dt>civil air regulations</dt></def></entry>
+	<entry id="car bomb"><ew>car bomb</ew><subj>WX</subj><hw>car bomb</hw><fl>noun</fl><def><date>1972</date><dt>:an explosive device concealed in an automobile for use as a weapon of terrorism</dt></def></entry>
+	<entry id="car coat"><ew>car coat</ew><subj>CL</subj><hw>car coat</hw><fl>noun</fl><def><date>1958</date><dt>:a three-quarter-length overcoat</dt></def></entry>
+	<entry id="car park"><ew>car park</ew><hw>car park</hw><fl>noun</fl><def><date>1926</date><sl>chiefly British</sl><dt>:a lot or garage for parking</dt></def></entry>
+	<entry id="car pool"><ew>car pool</ew><subj>TN</subj><hw>car pool</hw><fl>noun</fl><def><date>1942</date><dt>:an arrangement in which a group of people commute together by car</dt> <sd>also</sd> <dt>:the group entering into such an arrangement</dt></def></entry>
+	<entry id="car seat"><ew>car seat</ew><subj>AV</subj><hw>car seat</hw><fl>noun</fl><def><date>1968</date><dt>:a portable seat for an infant or a small child that attaches to an automobile seat and holds the child safely</dt></def></entry>
+	<entry id="car wash"><ew>car wash</ew><hw>car wash</hw><fl>noun</fl><def><date>1948</date><dt>:an area or structure equipped with facilities for washing automobiles</dt></def></entry>
+	<entry id="bar car"><ew>bar car</ew><subj>RR</subj><hw>bar car</hw><fl>noun</fl><def><date>1945</date><dt>:<sx>club car</sx></dt></def></entry>
+	<entry id="bumper car"><ew>bumper car</ew><subj>ET</subj><hw>bumper car</hw><fl>noun</fl><def><date>1959</date><dt>:a small electric car made to be driven around in an enclosure and to be bumped into others (as at an amusement park)</dt></def></entry>
+</entry_list>

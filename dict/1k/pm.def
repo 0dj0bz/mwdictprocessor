@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="pm"><ew>pm</ew><subj>AU-1#CP-1#EE-1#PY-1#TL-1</subj><hw>pm</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>phase modulation</dt> <sn>2</sn> <dt>premium</dt></def></entry>
+	<entry id="PM"><ew>PM</ew><subj>BZ-1#EE-2#PY-2#PO-3#CA-4#LW-5#MD-5#GV-6#FO-6#ML-7</subj><hw>PM</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>paymaster</dt> <sn>2</sn> <dt>permanent magnet</dt> <sn>3</sn> <dt>postmaster</dt> <sn>4</sn> <dt>post meridiem <un>often not cap and often punctuated</un></dt> <sn>5</sn> <dt>postmortem</dt> <sn>6</sn> <dt>prime minister</dt> <sn>7</sn> <dt>provost marshal</dt></def></entry>
+	<entry id="Pm"><ew>Pm</ew><subj>CH</subj><hw>Pm</hw><fl>symbol</fl><def><dt>promethium</dt></def></entry>
+</entry_list>

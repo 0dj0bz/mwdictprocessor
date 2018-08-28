@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="auto[1]"><ew>auto</ew><subj>AV</subj><hw hindex="1">au*to</hw><sound><wav>auto0001.wav</wav><wpr>!o-(+)tO</wpr></sound><pr>ˈȯ-(ˌ)tō, ˈä-</pr><fl>noun</fl><in><il>plural</il> <if>autos</if></in><def><date>1899</date><dt>:<sx>automobile</sx></dt></def></entry>
+	<entry id="auto[2]"><ew>auto</ew><subj>ME</subj><hw hindex="2">auto</hw><fl>adjective</fl><def><date>1942</date><dt>:<sx>automatic</sx></dt></def></entry>
+	<entry id="auto-"><ew>auto-</ew><subj>ME</subj><hw>auto-</hw><dx>see <dxt>aut-</dxt></dx></entry>
+	<entry id="auto-da-fe"><ew>auto-da-fe</ew><subj>RC#SY</subj><hw>au*to–da–fé</hw><sound><wav>auto_d01.wav</wav><wpr>+a2-tO-du-!fA</wpr></sound><pr>ˌau̇-tō-də-ˈfā, ˌȯ-tō-</pr><fl>noun</fl><in><il>plural</il> <if>au*tos–da–fé</if><sound><wav>auto_d02.wav</wav><wpr>+a2-tOz-du-!fA</wpr></sound> <pr>-tōz-də-</pr></in><et>Portuguese <it>auto da fé,</it> literally, act of the faith</et><def><date>1723</date><dt>:the ceremony for pronouncing judgment by the Inquisition which was followed by the execution of sentence by secular authorities</dt> <sd>broadly</sd> <dt>:the burning of a heretic</dt></def></entry>
+	<entry id="autos-da-fe"><ew>autos-da-fe</ew><hw>autos–da–fé</hw><cx><cl>plural of</cl> <ct>auto-da-fé</ct></cx></entry>
+	<entry id="aut-"><ew>aut-</ew><subj>ME-2</subj><hw>aut-</hw><vr><vl>or</vl> <va>auto-</va> </vr><fl>combining form</fl><et>Greek, from <it>autos</it> same, -self, self</et><def> <sn>1</sn> <dt>:self :same one <vi><it>aut</it>ism</vi> <vi><it>auto</it>biography</vi></dt> <sn>2</sn> <dt>:automatic :self-acting <vi><it>auto</it>pilot</vi></dt></def></entry>
+</entry_list>

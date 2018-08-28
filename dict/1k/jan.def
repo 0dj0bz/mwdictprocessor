@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="Jan"><ew>Jan</ew><subj>CA</subj><hw>Jan</hw><fl>abbreviation</fl><def><dt>January</dt></def></entry>
+	<entry id="Jan Mayen Island"><ew>Jan Mayen Island</ew><grp>Jan Ma*yen</grp><grp>Jan Island</grp><grp>Ma*yen Island</grp><hw>Jan Ma*yen Island</hw><sound><wav>ggjanm01.wav</wav></sound><pr>yän-ˈmī-ən</pr><fl>geographical name</fl><def><dt>island in Arctic Ocean <g>E</g> of Greenland &amp; <g>NNE</g> of Iceland belonging to Norway <it>area</it> 147 <it>square miles</it> (382 <it>square kilometers</it>)</dt></def></entry>
+</entry_list>

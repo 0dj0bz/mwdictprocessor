@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="user"><ew>user</ew><subj>DG</subj><hw>us*er</hw><sound><wav>user0001.wav</wav><wpr>!yU-zur</wpr></sound><pr>ˈyü-zər</pr><fl>noun</fl><def><date>15th century</date><dt>:one that uses</dt></def></entry>
+	<entry id="user fee"><ew>user fee</ew><subj>EC#GV</subj><hw>user fee</hw><fl>noun</fl><def><date>1967</date><dt>:an excise tax often in the form of a license or supplemental charge levied to fund a public service <ca>called also <cat>user's fee</cat></ca></dt></def></entry>
+	<entry id="user-friendly"><ew>user-friendly</ew><subj>CP</subj><hw>us*er–friend*ly</hw><sound><wav>userf01w.wav</wav><wpr>+yU-zur-!fren(d)-lE</wpr></sound><pr>ˌyü-zər-ˈfren(d)-lē</pr><fl>adjective</fl><def><date>1977</date><dt>:easy to learn, use, understand, or deal with <vi><it>user–friendly</it> software</vi></dt> <sd>also</sd> <dt>:<sx>agreeable</sx> <sx>appealing</sx> <vi>a <it>user–friendly</it> atmosphere</vi></dt></def><uro><ure>user–friendliness</ure> <fl>noun</fl></uro></entry>
+	<entry id="end user"><ew>end user</ew><hw>end user</hw><fl>noun</fl><def><date>circa 1945</date><dt>:the ultimate consumer of a finished product</dt></def></entry>
+	<entry id="graphical user interface"><ew>graphical user interface</ew><grp>graphical user</grp><grp>graphical interface</grp><grp>user interface</grp><subj>CP</subj><hw>graphical user interface</hw><fl>noun</fl><def><date>1981</date><dt>:a computer program designed to allow a computer user to interact easily with the computer typically by making choices from menus or groups of icons</dt></def></entry>
+</entry_list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="mar[1]"><ew>mar</ew><hw hindex="1">mar</hw><sound><wav>mar00001.wav</wav><wpr>!m@r</wpr></sound><pr>ˈmär</pr><fl>verb</fl><in><if>marred</if></in><in><if>mar*ring</if></in><et>Middle English <it>marren,</it> from Old English <it>mierran</it> to obstruct, waste; akin to Old High German <it>merren</it> to obstruct</et><def><vt>transitive verb</vt><date>before 12th century</date> <sn>1</sn> <dt>:to detract from the perfection or wholeness of :<sx>spoil</sx></dt> <sn>2</sn> <ssl>archaic</ssl>  <sn>a</sn> <dt>:to inflict serious bodily harm on</dt>  <sn>b</sn> <dt>:<sx>destroy</sx></dt><ss>injure</ss></def></entry>
+	<entry id="mar[2]"><ew>mar</ew><hw hindex="2">mar</hw><fl>noun</fl><def><date>1551</date><dt>:something that mars :<sx>blemish</sx></dt></def></entry>
+	<entry id="Mar"><ew>Mar</ew><subj>CA</subj><hw>Mar</hw><fl>abbreviation</fl><def><dt>March</dt></def></entry>
+	<entry id="mar[3]"><ew>mar</ew><subj>NA</subj><hw hindex="3">mar</hw><fl>abbreviation</fl><def><dt>maritime</dt></def></entry>
+	<entry id="Mar del Plata"><ew>Mar del Plata</ew><grp>Mar del</grp><grp>Mar Pla*ta</grp><grp>del Pla*ta</grp><hw>Mar del Pla*ta</hw><sound><wav>marde01g.wav</wav></sound><pr>ˌmär-del-ˈplä-tä</pr><fl>geographical name</fl><def><dt>city &amp; port <g>E</g> Argentina <g>SSE</g> of Buenos Aires <it>pop</it> 407,024</dt></def></entry>
+	<entry id="Serra do Mar"><ew>Serra do Mar</ew><grp>Serra do</grp><grp>Serra Mar</grp><grp>do Mar</grp><hw>Serra do Mar</hw><sound><wav>serra02g.wav</wav></sound><pr>dü-ˈmär</pr><fl>geographical name</fl><def><dt>mountain range <g>S</g> Brazil along coast</dt></def></entry>
+	<entry id="Vina del Mar"><ew>Vina del Mar</ew><grp>Vi*ña del</grp><grp>Vi*ña Mar</grp><grp>del Mar</grp><hw>Vi*ña del Mar</hw><sound><wav>vinad01g.wav</wav></sound><pr>ˈvē-nyä-(ˌ)t͟hel-ˈmär</pr><fl>geographical name</fl><def><dt>city &amp; port <it>cen</it> Chile <g>E</g> of Valparaiso <it>pop</it> 286,931</dt></def></entry>
+</entry_list>

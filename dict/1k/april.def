@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="April"><ew>April</ew><subj>CA</subj><hw>April</hw><sound><wav>april001.wav</wav><wpr>!A-prul</wpr></sound><pr>ˈā-prəl</pr><fl>noun</fl><et>Middle English, from Anglo-French &amp; Latin; Anglo-French <it>avrill,</it> from Latin <it>Aprilis</it></et><def><date>before 12th century</date><dt>:the fourth month of the Gregorian calendar</dt></def></entry>
+	<entry id="April fool"><ew>April fool</ew><hw>April fool</hw><fl>noun</fl><def><date>1687</date><dt>:the butt of a joke or trick played on April Fools' Day</dt> <sd>also</sd> <dt>:such a joke or trick</dt></def></entry>
+	<entry id="April Fools' Day"><ew>April Fools' Day</ew><grp>April Fools'</grp><grp>April Day</grp><grp>Fools' Day</grp><subj>CA</subj><hw>April Fools' Day</hw><vr><vl>also</vl> <va>April Fool's Day</va> </vr><fl>noun</fl><def><date>1817</date><dt>:April 1 characteristically marked by the playing of practical jokes</dt></def></entry>
+</entry_list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="movie"><ew>movie</ew><subj>PX-1#ET</subj><hw>mov*ie</hw><sound><wav>movie001.wav</wav><wpr>!mU-vE</wpr></sound><pr>ˈmü-vē</pr><fl>noun</fl><et><it>moving picture</it></et><def><date>1911</date> <sn>1</sn> <dt>:<sx>motion picture</sx></dt> <sn>2</sn> <sin><spl>plural</spl></sin> <dt>:a showing of a motion picture</dt> <sn>3</sn> <sin><spl>plural</spl></sin> <dt>:the motion-picture medium or industry</dt></def></entry>
+	<entry id="B movie"><ew>B movie</ew><subj>ET</subj><hw>B movie</hw><fl>noun</fl><def><date>1948</date><dt>:a cheaply produced motion picture</dt></def></entry>
+</entry_list>

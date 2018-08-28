@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="girl"><ew>girl</ew><subj>EP-1d#EP-2b</subj><hw>girl</hw><sound><wav>girl0001.wav</wav><wpr>!gur(-u)l</wpr></sound><pr>ˈgər(-ə)l</pr><fl>noun</fl><et>Middle English <it>gurle, girle</it> young person of either sex</et><def><date>14th century</date> <sn>1 a</sn> <dt>:a female child from birth to adulthood</dt>  <sn>b</sn> <dt>:<sx>daughter</sx></dt>  <sn>c</sn> <dt>:a young unmarried woman</dt>  <sn>d</sn> <ssl>sometimes offensive</ssl> <dt>:a single or married woman of any age</dt> <sn>2 a</sn> <dt>:<sx>sweetheart</sx></dt>  <sn>b</sn> <ssl>sometimes offensive</ssl> <dt>:a female servant or employee</dt></def><uro><ure>girl*hood</ure><sound><wav>girl0002.wav</wav><wpr>!gur(-u)l-+h2d</wpr></sound> <pr>-ˌhu̇d</pr> <fl>noun</fl></uro></entry>
+	<entry id="ball girl"><ew>ball girl</ew><subj>SC#SB#SF</subj><hw>ball girl</hw><fl>noun</fl><def><date>1926</date><dt>:a female attendant who retrieves balls for players or officials (as in a tennis match or a baseball or basketball game)</dt></def></entry>
+	<entry id="B-girl"><ew>B-girl</ew><subj>SY</subj><hw>B–girl</hw><fl>noun</fl><et>probably from <it>b</it>ar + <it>girl</it></et><def><date>1936</date><dt>:a woman who entertains bar patrons and encourages them to spend freely</dt></def></entry>
+	<entry id="call girl"><ew>call girl</ew><subj>SY#JB</subj><hw>call girl</hw><fl>noun</fl><def><date>circa 1940</date><dt>:a prostitute with whom an appointment may be made by telephone</dt></def></entry>
+	<entry id="chorus girl"><ew>chorus girl</ew><subj>ET</subj><hw>chorus girl</hw><fl>noun</fl><def><date>1894</date><dt>:a young woman who sings or dances in the chorus of a theatrical production (as a musical or revue)</dt></def></entry>
+	<entry id="cover girl"><ew>cover girl</ew><subj>PU</subj><hw>cover girl</hw><fl>noun</fl><def><date>1915</date><dt>:an attractive young woman whose picture appears on a magazine cover</dt></def></entry>
+	<entry id="flower girl"><ew>flower girl</ew><hw>flower girl</hw><fl>noun</fl><def><date>1902</date><dt>:a little girl who carries flowers at a wedding</dt></def></entry>
+	<entry id="house girl"><ew>house girl</ew><subj>JB</subj><hw>house girl</hw><fl>noun</fl><def><date>1835</date><dt>:<sx>housemaid</sx></dt></def></entry>
+	<entry id="pinup girl"><ew>pinup girl</ew><hw>pinup girl</hw><fl>noun</fl><def><date>1941</date><dt>:a girl or woman whose glamorous qualities make her a suitable subject for a pinup</dt></def></entry>
+	<entry id="poster girl"><ew>poster girl</ew><hw>poster girl</hw><fl>noun</fl><def><date>1969</date><dt>:a female poster child</dt></def></entry>
+</entry_list>

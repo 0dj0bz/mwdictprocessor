@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="PC[1]"><ew>PC</ew><subj>CP</subj><hw hindex="1">PC</hw><sound><wav>pc000001.wav</wav><wpr>+pE-!sE</wpr></sound><pr>ˌpē-ˈsē</pr><fl>noun</fl><in><il>plural</il> <if>PCs</if> <il>or</il> <if>PC's</if></in><def><date>1978</date><dt>:<sx>personal computer</sx></dt></def></entry>
+	<entry id="pc"><ew>pc</ew><subj>WT-1#AS-1</subj><hw>pc</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>parsec</dt> <sn>2</sn> <set>Latin <it>post cibum</it></set> <dt>after a meal</dt>  <sn>b</sn> <set><it>post cibos</it></set> <dt>after meals</dt></def></entry>
+	<entry id="PC[2]"><ew>PC</ew><subj>GV-1#MA-2#SY-3#PO-4#EE-5#BZ-6</subj><hw hindex="2">PC</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>peace corps</dt> <sn>2</sn> <dt>percent; percentage</dt> <sn>3</sn> <dt>political correctness; politically correct</dt> <sn>4</sn> <dt>postcard</dt> <sn>5</sn> <dt>printed circuit</dt> <sn>6</sn> <dt>professional corporation</dt></def></entry>
+</entry_list>

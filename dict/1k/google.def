@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="google"><ew>google</ew><subj>CP#TL</subj><hw>goo*gle</hw><sound><wav>googl01v.wav</wav></sound><pr>ˈgü-gəl</pr><fl>verb</fl><in><if>goo*gled</if></in><in><if>goo*gling</if> <sound><wav>googl02v.wav</wav></sound><pr>-g(ə-)liŋ</pr> </in><lb>often capitalized</lb><et><it>Google,</it> trademark for a search engine</et><def><vt>transitive verb</vt><date>2001</date><dt>:to use the Google <d_link>search engine</d_link> to obtain information about (as a person) on the World Wide Web</dt></def></entry>
+</entry_list>

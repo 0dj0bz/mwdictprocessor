@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="teen[1]"><ew>teen</ew><hw hindex="1">teen</hw><sound><wav>teen0001.wav</wav><wpr>!tEn</wpr></sound><pr>ˈtēn</pr><fl>noun</fl><et>Middle English <it>tene,</it> from Old English <it>tēona</it> injury, grief; akin to Old Norse <it>tjōn</it> loss, damage</et><def><date>13th century</date><sl>archaic</sl><dt>:<sx>misery</sx> <sx>affliction</sx></dt></def></entry>
+	<entry id="teen[2]"><ew>teen</ew><hw hindex="2">teen</hw><fl>noun</fl><def><date>1818</date><dt>:a <fw>teenage</fw> person :<sx>teenager</sx></dt></def><uro><ure>teen</ure> <fl>adjective</fl></uro></entry>
+</entry_list>

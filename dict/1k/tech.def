@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="tech[1]"><ew>tech</ew><hw hindex="1">tech</hw><sound><wav>tech001v.wav</wav><wpr>!tek</wpr></sound><pr>ˈtek</pr><fl>noun</fl><def><date>1942</date><dt>:<sx>technician</sx> <vi>lab <it>tech</it><it>s</it></vi> <vi>a computer <it>tech</it></vi></dt></def></entry>
+	<entry id="tech[2]"><ew>tech</ew><subj>JB</subj><hw hindex="2">tech</hw><fl>noun</fl><lb>often attributive</lb><def><date>1972</date><dt>:<sx>technology</sx> <vi>the triumph of <it>tech</it>…is far from complete <aq><it>Newsweek</it></aq></vi></dt></def></entry>
+	<entry id="tech[3]"><ew>tech</ew><subj>LW#EC#CH</subj><hw hindex="3">tech</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt><fw>technical</fw>; <fw>technically</fw></dt> <sn>2</sn> <dt><fw>technological</fw></dt></def></entry>
+	<entry id="high tech"><ew>high tech</ew><hw>high tech</hw><sound><wav>highte01.wav</wav><wpr>!hI-!tek</wpr></sound><vr><vl>also</vl> <va>hi–tech</va> <pr>-ˈtek</pr></vr><fl>noun</fl><def><date>1969</date> <sn>1</sn> <dt>:<sx>high technology</sx></dt> <sn>2</sn> <dt>:a style of interior design featuring industrial products, materials, or designs</dt></def><uro><ure>high–tech</ure> <vr><vl>also</vl> <va>hi–tech</va> </vr> <fl>adjective</fl></uro></entry>
+	<entry id="hi-tech"><ew>hi-tech</ew><hw>hi–tech</hw><cx><cl>variant of</cl> <ct>high-tech</ct></cx></entry>
+	<entry id="low-tech"><ew>low-tech</ew><subj>EE</subj><hw>low–tech</hw><sound><wav>lowtec01.wav</wav><wpr>!lO-!tek</wpr></sound><pr>ˈlō-ˈtek</pr><fl>adjective</fl><def><date>1981</date><dt>:technologically simple or unsophisticated <vi><it>low–tech</it> industries</vi></dt></def></entry>
+	<entry id="vo-tech"><ew>vo-tech</ew><subj>ED</subj><hw>vo–tech</hw><sound><wav>votec01v.wav</wav><wpr>!vO-!tek</wpr></sound><pr>ˈvō-ˈtek</pr><fl>adjective</fl><et><it>vo</it>cational + <it>tech</it>nical</et><def><date>1975</date><dt>:relating to, providing, or receiving vocational and technical education and training</dt></def></entry>
+</entry_list>

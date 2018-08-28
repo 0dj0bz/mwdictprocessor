@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="st"><ew>st</ew><subj>LT-1#GV-2#HH-3</subj><hw>st</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>stanza</dt> <sn>2</sn> <dt>state</dt> <sn>3</sn> <dt>stitch</dt> <sn>4</sn> <dt>stone</dt></def></entry>
+	<entry id="ST"><ew>ST</ew><subj>CA</subj><hw>ST</hw><fl>abbreviation</fl><def><dt>standard time</dt></def></entry>
+	<entry id="St"><ew>St</ew><subj>RC-1#AT-2#TN-3</subj><hw>St</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>saint</dt> <sn>2</sn> <dt>stratus</dt> <sn>3</sn> <dt>street</dt></def></entry>
+	<entry id="-st[1]"><ew>-st</ew><hw hindex="1">-st</hw><dx>see <dxt>-est</dxt></dx></entry>
+	<entry id="-st[2]"><ew>-st</ew><subj>NB</subj><hw hindex="2">-st</hw><fl>symbol</fl><def><dt><un>used after the figure 1 to indicate the ordinal number <it>first</it> <vi>1<it>st</it></vi> <vi>91<it>st</it></vi></un></dt></def></entry>
+	<entry id="-est[2]"><ew>-est</ew><hw hindex="2">-est</hw><vr><vl>or</vl> <va>-st</va> </vr><fl>verb suffix</fl><et>Middle English, from Old English <it>-est, -ast, -st;</it> akin to Old High German <it>-ist, -ōst, -ēst,</it> 2d singular ending</et><def><dt><un>used to form the archaic second person singular of English verbs (with <it>thou</it>) <vi>did<it>st</it></vi> <vi>can<it>st</it></vi></un></dt></def></entry>
+</entry_list>

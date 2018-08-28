@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="AL"><ew>AL</ew><subj>GZ-1#SB-2#ML-3</subj><hw>AL</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>Alabama</dt> <sn>2</sn> <dt>American League</dt> <sn>3</sn> <dt>American Legion</dt></def></entry>
+	<entry id="Al"><ew>Al</ew><subj>CH</subj><hw>Al</hw><fl>symbol</fl><def><dt>aluminum</dt></def></entry>
+	<entry id="al dente"><ew>al dente</ew><subj>FD</subj><hw>al den*te</hw><sound><wav>alden01w.wav</wav><wpr>@l-!den-(+)tA</wpr></sound><pr>äl-ˈden-(ˌ)tā, al-</pr><fl>adjective</fl><et>Italian; literally, to the tooth</et><def><date>1920</date><dt>:cooked just enough to retain a somewhat firm texture</dt></def><uro><ure>al dente</ure> <fl>adverb</fl></uro></entry>
+	<entry id="Al Biqa"><ew>Al Biqa</ew><hw>Al Biqaʽ</hw><fl>geographical name</fl><def><dt><dx>see <dxt>bekaa</dxt></dx></dt></def></entry>
+	<entry id="Al Amarah"><ew>Al Amarah</ew><hw>Al ʽA*mā*rah</hw><sound><wav>alama01g.wav</wav></sound><pr>ˌal-ha-ˈmä-rə</pr><fl>geographical name</fl><def><dt>city <g>SE</g> Iraq on the Tigris</dt></def></entry>
+	<entry id="Al Fallujah"><ew>Al Fallujah</ew><hw>Al Fal*lū*jah</hw><vr><vl>or</vl> <va>Fal*lu*jah</va> <vl>or</vl> <va>Al Fal*lu*ja</va> <vl>or</vl> <va>Falluja</va> <sound><wav>ggal_f01.wav</wav></sound> <pr>(ˌäl-)fə-ˈlü-jə</pr> </vr><fl>geographical name</fl><def><dt>town <it>cen</it> Iraq on the Euphrates</dt></def></entry>
+	<entry id="Al Fayyum"><ew>Al Fayyum</ew><hw>Al Fayyūm</hw><fl>geographical name</fl><def><dt><dx>see <dxt>el faiyûm</dxt></dx></dt></def></entry>
+	<entry id="Al Fujayrah"><ew>Al Fujayrah</ew><hw>Al Fu*jay*rah</hw><sound><wav>alfuj01g.wav</wav></sound><pr>ˌäl-fu̇-ˈjī-rə</pr><vr><vl>or</vl> <va>Fu*jai*rah</va>  <sound><wav>fujai01g.wav</wav></sound><pr>-ˈjī-rə</pr> </vr><fl>geographical name</fl><def><dt>sheikhdom, member of United Arab Emirates <it>area</it> 450 <it>square miles</it> (1166 <it>square kilometers</it>)</dt></def></entry>
+	<entry id="Al Hamad"><ew>Al Hamad</ew><hw>Al Hamad</hw><fl>geographical name</fl><def><dt><dx>see <dxt>hamad <dxn>(Al)</dxn></dxt></dx></dt></def></entry>
+	<entry id="Al Hijaz"><ew>Al Hijaz</ew><hw>Al Ḩijāz</hw><fl>geographical name</fl><def><dt><dx>see <dxt>hejaz</dxt></dx></dt></def></entry>
+</entry_list>

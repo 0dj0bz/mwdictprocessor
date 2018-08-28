@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="server"><ew>server</ew><subj>SC-2#HH-3#LW-4#RC-5#CP-6</subj><hw>serv*er</hw><sound><wav>server01.wav</wav><wpr>!sur-vur</wpr></sound><pr>ˈsər-vər</pr><fl>noun</fl><def><date>15th century</date> <sn>1</sn> <dt>:one that <fw>serves</fw> food or drink</dt> <sn>2</sn> <dt>:the player who serves (as in tennis)</dt> <sn>3</sn> <dt>:something used in <fw>serving</fw> food or drink</dt> <sn>4</sn> <dt>:one that serves legal processes upon another</dt> <sn>5</sn> <dt>:the celebrant's assistant at mass</dt> <sn>6</sn> <dt>:a computer in a network that is used to provide <fw>services</fw> (as access to files or shared peripherals or the routing of e-mail) to other computers in the network</dt></def></entry>
+	<entry id="altar server"><ew>altar server</ew><subj>RC</subj><hw>altar server</hw><fl>noun</fl><def><date>1980</date><dt>:a boy or girl who assists the celebrant in a liturgical service</dt></def></entry>
+</entry_list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="hotel"><ew>hotel</ew><subj>BZ</subj><hw>ho*tel</hw><sound><wav>hotel001.wav</wav><wpr>hO-!tel</wpr></sound><pr>hō-ˈtel, ˈhō-ˌ</pr><fl>noun</fl><et>French <it>hôtel,</it> from Old French <it>hostel</it> hostel</et><def><date>1765</date><dt>:an establishment that provides lodging and usually meals, entertainment, and various personal services for the public :<sx>inn</sx></dt></def><uro><ure>ho*tel*dom</ure><sound><wav>hotel002.wav</wav><wpr>hO-!tel-dum</wpr></sound> <pr>-dəm</pr> <fl>noun</fl></uro></entry>
+	<entry id="apartment hotel"><ew>apartment hotel</ew><subj>EC#AC</subj><hw>apartment hotel</hw><fl>noun</fl><def><date>1909</date><dt>:a hotel containing apartments as well as accommodations for transients</dt></def></entry>
+</entry_list>

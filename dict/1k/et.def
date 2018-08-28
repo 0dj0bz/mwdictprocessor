@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="et"><ew>et</ew><subj>DI</subj><hw>et</hw><sound><wav>et000001.wav</wav><wpr>!et</wpr></sound><pr>ˈet</pr><cx><cl>dialect past and past participle of</cl> <ct>eat</ct></cx></entry>
+	<entry id="ET[1]"><ew>ET</ew><subj>AS</subj><hw hindex="1">ET</hw><sound><wav>et00001v.wav</wav><wpr>!E-!tE</wpr></sound><pr>ˈē-ˈtē</pr><fl>noun</fl><def><date>1981</date><dt>:<sx>extraterrestrial</sx></dt></def></entry>
+	<entry id="Et"><ew>Et</ew><subj>CH</subj><hw>Et</hw><fl>abbreviation</fl><def><dt>ethyl</dt></def></entry>
+	<entry id="ET[2]"><ew>ET</ew><subj>CA</subj><hw hindex="2">ET</hw><fl>abbreviation</fl><def><dt>eastern time</dt></def></entry>
+	<entry id="-et[1]"><ew>-et</ew><hw hindex="1">-et</hw><fl>noun suffix</fl><et>Middle English, from Anglo-French <it>-et,</it> masculine, &amp; <it>-ete,</it> feminine, from Late Latin <it>-itus</it> &amp; <it>-ita</it></et><def><dt>:small one <vi>baron<it>et</it></vi> <vi>cellar<it>et</it></vi></dt></def></entry>
+	<entry id="-et[2]"><ew>-et</ew><hw hindex="2">-et</hw><fl>noun suffix</fl><et><it>duet</it></et><def><dt>:group <vi>oct<it>et</it></vi></dt></def></entry>
+	<entry id="et alia"><ew>et alia</ew><hw>et alia</hw><sound><wav>et_ali02.wav</wav><wpr>(+)et-!@-l(E-)yu</wpr><wav>et_ali01.wav</wav><wpr>(+)et-!A-l(E-)yu</wpr></sound><pr>(ˌ)et-ˈä-l(ē-)yə, -ˈā-, -ˈa-</pr><et>Latin</et><def><date>1953</date><dt>:and others</dt></def></entry>
+	<entry id="et cetera"><ew>et cetera</ew><hw>et cet*era</hw><sound><wav>etcete02.wav</wav><wpr>et-!se-tu-ru</wpr><wav>etcete01.wav</wav><wpr>ek-!se-tru</wpr></sound><pr>et-ˈse-tə-rə, -ˈse-trə <it>also</it> it-, ÷ek-, ÷ik-</pr><et>Latin</et><def><date>12th century</date><dt>:and others especially of the same kind :and so forth</dt></def></entry>
+	<entry id="et al"><ew>et al</ew><hw>et al</hw><fl>abbreviation</fl><et>Latin <it>et alii</it> (masculine), <it>et aliae</it> (feminine), or <it>et alia</it> (neuter)</et><def><dt>and others</dt></def></entry>
+	<entry id="et seq"><ew>et seq</ew><hw>et seq</hw><fl>abbreviation</fl><def> <sn>1</sn> <set>Latin <it>et sequens</it></set> <dt>and the following one</dt> <sn>2</sn> <set>Latin <it>et sequentes</it> (masculine &amp; feminine plural) or <it>et sequentia</it> (neuter plural)</set> <dt>and the following ones</dt></def></entry>
+</entry_list>

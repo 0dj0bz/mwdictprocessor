@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="download[1]"><ew>download</ew><subj>CP#IS</subj><hw hindex="1">down*load</hw><sound><wav>downlo01.wav</wav><wpr>!da2n-+lOd</wpr></sound><pr>ˈdau̇n-ˌlōd</pr><fl>noun</fl><def><date>1977</date><dt>:an act or instance of <fw>downloading</fw> something</dt> <sd>also</sd> <dt>:the item <fw>downloaded</fw></dt></def></entry>
+	<entry id="download[2]"><ew>download</ew><subj>CP#IS</subj><hw hindex="2">download</hw><fl>verb</fl><def><vt>transitive verb</vt><date>1979</date><dt>:to transfer (as data or files) from a usually large computer to the memory of another device (as a smaller computer)</dt></def><uro><ure>down*load*able</ure><sound><wav>downlo02.wav</wav><wpr>!da2n-+lO-du-bul</wpr></sound> <pr>-ˌlō-də-bəl</pr> <fl>adjective</fl></uro></entry>
+</entry_list>

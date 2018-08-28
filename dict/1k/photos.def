@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="photo[1]"><ew>photo</ew><subj>PX</subj><hw hindex="1">pho*to</hw><sound><wav>photo001.wav</wav><wpr>!fO-(+)tO</wpr></sound><pr>ˈfō-(ˌ)tō</pr><fl>noun</fl><in><il>plural</il> <if>photos</if></in><def><date>1860</date><dt>:<sx>photograph</sx></dt></def></entry>
+	<entry id="photo[2]"><ew>photo</ew><subj>PX</subj><hw hindex="2">photo</hw><fl>verb</fl><def><date>1868</date><dt>:<sx>photograph</sx></dt></def></entry>
+</entry_list>

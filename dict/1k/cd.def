@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="CD[1]"><ew>CD</ew><subj>EC</subj><hw hindex="1">CD</hw><sound><wav>cd000001.wav</wav><wpr>+sE-!dE</wpr></sound><pr>ˌsē-ˈdē</pr><fl>noun</fl><def><date>1965</date><dt>:<sx>certificate of deposit</sx></dt></def></entry>
+	<entry id="CD[2]"><ew>CD</ew><subj>AU#CP</subj><hw hindex="2">CD</hw><fl>noun</fl><et><it>c</it>ompact <it>d</it>isc</et><def><date>1979</date><dt>:a small optical disk usually containing recorded music or computer data</dt> <sd>also</sd> <dt>:the content (as music or a computer program) of a CD released as a unit <vi>promoting her latest <it>CD</it></vi></dt></def></entry>
+	<entry id="cd"><ew>cd</ew><subj>WT</subj><hw>cd</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>candela</dt> <sn>2</sn> <dt>candle</dt> <sn>3</sn> <dt>cord</dt></def></entry>
+	<entry id="Cd"><ew>Cd</ew><subj>CH</subj><hw>Cd</hw><fl>symbol</fl><def><dt>cadmium</dt></def></entry>
+	<entry id="CD[3]"><ew>CD</ew><subj>BZ-1#GV-2#ML-2#GV-3</subj><hw hindex="3">CD</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>carried down</dt> <sn>2</sn> <dt>civil defense</dt> <sn>3</sn> <set>French <it>corps diplomatique</it></set> <dt>diplomatic corps</dt></def></entry>
+	<entry id="CD-ROM"><ew>CD-ROM</ew><subj>CP</subj><hw>CD–ROM</hw><sound><wav>cd_rom01.wav</wav><wpr>+sE-+dE-!r@m</wpr></sound><pr>ˌsē-ˌdē-ˈräm</pr><fl>noun</fl><et><it>c</it>ompact <it>d</it>isc <it>r</it>ead-<it>o</it>nly <it>m</it>emory</et><def><date>1983</date><dt>:a CD containing computer data that cannot be altered</dt></def></entry>
+</entry_list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="china"><ew>china</ew><subj>HH#CR</subj><hw>chi*na</hw><sound><wav>china001.wav</wav><wpr>!chI-nu</wpr></sound><pr>ˈchī-nə</pr><fl>noun</fl><et>Persian <it>chīnī</it> Chinese porcelain</et><def><date>1579</date> <sn>1</sn> <dt>:<sx>porcelain</sx></dt> <sd>also</sd> <dt>:vitreous porcelain wares (as dishes, vases, or ornaments) for domestic use</dt> <sn>2</sn> <dt>:earthenware or porcelain tableware</dt></def></entry>
+	<entry id="China aster"><ew>China aster</ew><subj>BS#AG</subj><hw>China aster</hw><fl>noun</fl><def><date>1794</date><dt>:a common annual garden aster (<it>Callistephus chinensis</it>) native to northern China that occurs in many showy forms</dt></def></entry>
+	<entry id="china clay"><ew>china clay</ew><subj>MD#CR#GE</subj><hw>china clay</hw><fl>noun</fl><def><date>1840</date><dt>:<sx>kaolin</sx></dt></def></entry>
+	<entry id="china closet"><ew>china closet</ew><subj>HH</subj><hw>china closet</hw><fl>noun</fl><def><date>1771</date><dt>:a cabinet or cupboard for the storage or display of household china</dt></def></entry>
+	<entry id="China rose"><ew>China rose</ew><subj>BS#AG</subj><hw>China rose</hw><fl>noun</fl><def><date>circa 1731</date><dt>:any of numerous garden roses derived from a shrubby Chinese rose (<it>Rosa chinensis</it>)</dt></def></entry>
+	<entry id="China Syndrome"><ew>China Syndrome</ew><subj>EN</subj><hw>China Syndrome</hw><fl>noun</fl><et>from the notion that the molten reactor contents could hypothetically sink through the earth to reach China</et><def><date>1970</date><dt>:<sx>meltdown <sxn>1</sxn></sx></dt></def></entry>
+	<entry id="China tree"><ew>China tree</ew><subj>BS#AG</subj><hw>China tree</hw><fl>noun</fl><def><date>1819</date><dt>:<sx>chinaberry</sx></dt></def></entry>
+	<entry id="China Sea"><ew>China Sea</ew><hw>China Sea</hw><fl>geographical name</fl><def><dt>the E. &amp; S. China seas</dt></def></entry>
+	<entry id="bone china"><ew>bone china</ew><subj>CE#HH</subj><hw>bone china</hw><fl>noun</fl><def><date>1879</date><dt>:translucent white china made with bone ash or calcium phosphate and characterized by whiteness</dt></def></entry>
+	<entry id="ironstone china"><ew>ironstone china</ew><subj>FA#HA</subj><hw>ironstone china</hw><fl>noun</fl><def><date>1825</date><dt>:a hard heavy durable white pottery developed in England early in the 19th century</dt></def></entry>
+</entry_list>

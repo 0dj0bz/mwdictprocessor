@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="player"><ew>player</ew><subj>SP-a#MU-b,d#ET-c#AU-d#CP-d</subj><hw>play*er</hw><sound><wav>player01.wav</wav><wpr>!plA-ur</wpr></sound><pr>ˈplā-ər</pr><fl>noun</fl><def><date>14th century</date><dt> :one that <fw>plays</fw>: as</dt>  <sn>a</sn> <dt>:a person who plays a game</dt>  <sn>b</sn> <dt>:<sx>musician</sx></dt>  <sn>c</sn> <dt>:<sx>actor</sx></dt>  <sn>d</sn> <dt>:a device that reproduces recorded material (as video images or music) from a usually specified medium <vi>a CD <it>player</it></vi></dt>  <sn>e</sn> <dt>:one actively involved especially in a competitive field or process :<sx>participant</sx> <vi>a key <it>player</it> in politics</vi> </dt></def></entry>
+	<entry id="player piano"><ew>player piano</ew><subj>MU</subj><hw>player piano</hw><fl>noun</fl><def><date>1907</date><dt>:a piano containing a mechanism by which it plays automatically</dt></def></entry>
+</entry_list>

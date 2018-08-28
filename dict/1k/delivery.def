@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="delivery"><ew>delivery</ew><subj>EM#MD#LW#BZ#SP</subj><hw>de*liv*ery</hw><sound><wav>delive07.wav</wav><wpr>di-!li-vu-rE</wpr></sound><pr>di-ˈli-v(ə-)rē, dē-</pr><fl>noun</fl><in><il>plural</il> <if>de*liv*er*ies</if></in><def><date>15th century</date><dt>:the act or manner of <fw>delivering</fw> something</dt> <sd>also</sd> <dt>:something <fw>delivered</fw></dt></def></entry>
+	<entry id="delivery boy"><ew>delivery boy</ew><subj>BZ#JB</subj><hw>delivery boy</hw><fl>noun</fl><def><date>1918</date><dt>:a person employed by a retail store to deliver small orders to customers on call</dt></def></entry>
+	<entry id="breech delivery"><ew>breech delivery</ew><subj>MD#EM</subj><hw>breech delivery</hw><fl>noun</fl><def><date>1882</date><dt>:delivery of a fetus by breech presentation <ca>called also <cat>breech birth</cat></ca></dt></def></entry>
+	<entry id="general delivery"><ew>general delivery</ew><subj>PO</subj><hw>general delivery</hw><fl>noun</fl><def><date>1846</date><dt>:a department of a post office that handles the delivery of mail at a post office window to persons who call for it</dt></def></entry>
+	<entry id="rural free delivery"><ew>rural free delivery</ew><grp>rural free</grp><grp>rural delivery</grp><grp>free delivery</grp><subj>PO</subj><hw>rural free delivery</hw><fl>noun</fl><def><date>1892</date><dt>:free delivery of mail to a rural area <ca>called also <cat>rural delivery</cat></ca></dt></def></entry>
+	<entry id="special delivery"><ew>special delivery</ew><subj>PO</subj><hw>special delivery</hw><fl>noun</fl><def><date>1870</date><dt>:expedited messenger delivery of mail matter for an extra fee</dt></def></entry>
+</entry_list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="she[1]"><ew>she</ew><hw hindex="1">she</hw><sound><wav>she00001.wav</wav><wpr>!shE</wpr></sound><pr>ˈshē</pr><fl>pronoun</fl><et>Middle English, probably alteration of <it>hye,</it> alteration of Old English <it>hēo</it> she <ma>he</ma></et><def><date>12th century</date> <sn>1</sn> <dt>:that female one who is neither speaker nor hearer <vi><it>she</it> is my wife</vi> <dx>compare <dxt>he</dxt> <dxt>her</dxt> <dxt>hers</dxt> <dxt>it</dxt> <dxt>they</dxt></dx></dt> <sn>2</sn> <dt><un>used to refer to one regarded as feminine (as by personification) <vi><it>she</it> was a fine ship</vi></un></dt> <sn>3</sn> <dt><un>used as an alternative to <it>he</it> to refer to a person of unspecified gender <vi>allow anyone to do whatever <it>she</it> wants <aq>D. J. Callahan</aq></vi></un></dt></def></entry>
+	<entry id="she[2]"><ew>she</ew><subj>ZO#ZM</subj><hw hindex="2">she</hw><fl>noun</fl><def><date>14th century</date><dt>:a female person or animal <un>often used in combination <vi><it>she</it>-cat</vi> <vi><it>she</it>-cousin</vi></un></dt></def></entry>
+	<entry id="she'd"><ew>she'd</ew><hw>she'd</hw><sound><wav>shed0003.wav</wav><wpr>!shEd</wpr></sound><pr>ˈshēd</pr><def><date>1609</date><dt>:she had :she would</dt></def></entry>
+	<entry id="she'll"><ew>she'll</ew><hw>she'll</hw><sound><wav>shell002.wav</wav><wpr>!shE(u)l</wpr></sound><pr>ˈshēl, ˈshil</pr><def><date>circa 1590</date><dt>:she will :she shall</dt></def></entry>
+	<entry id="she's"><ew>she's</ew><hw>she's</hw><sound><wav>shes0001.wav</wav><wpr>!shEz</wpr></sound><pr>ˈshēz</pr><def><date>1588</date><dt>:she is :she has</dt></def></entry>
+	<entry id="her[2]"><ew>her</ew><hw hindex="2">her</hw><fl>pronoun</fl><cx><cl>objective case of</cl> <ct>she</ct></cx></entry>
+	<entry id="she-crab"><ew>she-crab</ew><subj>ZI#FD</subj><hw>she–crab</hw><sound><wav>shecr01v.wav</wav><wpr>!shE-!krab</wpr></sound><pr>ˈshē-ˈkrab</pr><fl>noun</fl><def><date>1967</date><dt>:an immature female blue crab</dt></def></entry>
+	<entry id="she-oak"><ew>she-oak</ew><subj>BS</subj><hw>she–oak</hw><sound><wav>sheoak01.wav</wav><wpr>!shE-+Ok</wpr></sound><pr>ˈshē-ˌōk</pr><fl>noun</fl><def><date>1792</date><dt>:any of various casuarinas</dt></def></entry>
+</entry_list>

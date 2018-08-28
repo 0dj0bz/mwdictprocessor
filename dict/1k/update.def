@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="update[1]"><ew>update</ew><hw hindex="1">up*date</hw><sound><wav>update01.wav</wav><wpr>+up-!dAt</wpr></sound><pr>ˌəp-ˈdāt</pr><fl>verb</fl><def><vt>transitive verb</vt><date>1941</date><dt>:to bring up to date</dt></def></entry>
+	<entry id="update[2]"><ew>update</ew><hw hindex="2">up*date</hw><sound><wav>update02.wav</wav><wpr>!up-+dAt</wpr></sound><pr>ˈəp-ˌdāt</pr><fl>noun</fl><def><date>1965</date> <sn>1</sn> <dt>:an act or instance of <fw>updating</fw></dt> <sn>2</sn> <dt>:current information for updating something</dt> <sn>3</sn> <dt>:an up-to-date version, account, or report</dt></def></entry>
+	<entry id="up-to-date"><ew>up-to-date</ew><hw>up–to–date</hw><fl>adjective</fl><def><date>1887</date> <sn>1</sn> <dt>:extending up to the present time :including the latest information <vi><it>up–to–date</it> maps</vi></dt> <sn>2</sn> <dt>:abreast of the times :<sx>modern</sx> <vi><it>up–to–date</it> methods</vi></dt></def><uro><ure>up–to–date*ly</ure> <fl>adverb</fl></uro><uro><ure>up–to–date*ness</ure> <fl>noun</fl></uro></entry>
+</entry_list>

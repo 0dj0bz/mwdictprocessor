@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="France"><ew>France</ew><hw>France</hw><sound><wav>bixfra02.wav</wav></sound><pr>ˈfran(t)s, fräⁿs</pr><fl>biographical name</fl><def><dt>Anatole 1844–1924 pseud. of <it>Jacques-Anatole-François Thibault</it> Fr. nov. &amp; satirist</dt></def></entry>
+	<entry id="France"><ew>France</ew><hw>France</hw><sound><wav>bixfra02.wav</wav></sound><pr>ˈfran(t)s, ˈfräⁿs</pr><fl>geographical name</fl><def><dt>country <g>W</g> Europe between English Channel &amp; the Mediterranean; a republic ✽ Paris <it>area</it> 212,918 <it>square miles</it> (551,458 <it>square kilometers</it>), <it>pop</it> 61,100,000</dt></def></entry>
+	<entry id="Ile-de-France"><ew>Ile-de-France</ew><hw>Île–de–France</hw><sound><wav>ggiled01.wav</wav></sound><pr>ˌēl-də-ˈfräⁿs</pr><fl>geographical name</fl><def><dt>region &amp; former province <g>N</g> <it>cen</it> France bounded on <g>N</g> by Picardy, on <g>E</g> by Champagne, on <g>S</g> by Orléanais, &amp; on <g>W</g> by Normandy ✽ Paris</dt></def></entry>
+	<entry id="Fort-de-France"><ew>Fort-de-France</ew><hw>Fort–de–France</hw><sound><wav>ggfort03.wav</wav></sound><pr>ˌfȯr-də-ˈfräⁿs</pr><fl>geographical name</fl><def><dt>city French West Indies ✽ of Martinique on <g>W</g> coast <it>pop</it> 94,152</dt></def></entry>
+	<entry id="Mendes-France"><ew>Mendes-France</ew><hw>Mendès–France</hw><sound><wav>bixmen11.wav</wav></sound><pr>maⁿ-des-ˈfräⁿs</pr><fl>biographical name</fl><def><dt>Pierre 1907–1982 Fr. statesman</dt></def></entry>
+	<entry id="New France"><ew>New France</ew><hw>New France</hw><fl>geographical name</fl><def><dt>the possessions of France in North America before 1763</dt></def></entry>
+	<entry id="Margaret of Valois"><ew>Margaret of Valois</ew><grp>Margaret of</grp><grp>Margaret Valois</grp><grp>of Valois</grp><hw>Margaret of Valois</hw><vr><vl>or</vl> <va>Margaret of France</va> </vr><fl>biographical name</fl><def><dt>1553–1615 <it>queen consort of Henry of Navarre</it></dt></def></entry>
+</entry_list>

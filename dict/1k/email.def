@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="e-mail"><ew>e-mail</ew><subj>CP#TL</subj><hw>e–mail</hw><sound><wav>e_mail01.wav</wav><wpr>!E-+mAl</wpr></sound><pr>ˈē-ˌmāl</pr><fl>noun</fl><et><it>e</it>lectronic</et><def><date>1982</date> <sn>1</sn> <dt>:a means or system for transmitting messages electronically (as between computers on a network) <vi>communicating by <it>e–mail</it></vi></dt> <sn>2 a</sn> <dt>:messages sent and received electronically through an e-mail system <vi>receives a lot of <it>e–mail</it></vi></dt>  <sn>b</sn> <dt>:an e-mail message <vi>sent him an <it>e–mail</it></vi></dt></def><uro><ure>e–mail</ure> <fl>verb</fl></uro><uro><ure>e–mail*er</ure><sound><wav>email01s.wav</wav><wpr>!E-+mA-lur</wpr></sound> <pr>-ˌmā-lər</pr> <fl>noun</fl></uro></entry>
+	<entry id="junk e-mail"><ew>junk e-mail</ew><subj>CP#TL#BZ</subj><hw>junk e–mail</hw><fl>noun</fl><def><date>1986</date><dt>:<sx>spam</sx></dt></def></entry>
+</entry_list>

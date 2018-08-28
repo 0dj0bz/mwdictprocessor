@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="TV[1]"><ew>TV</ew><subj>TL</subj><hw hindex="1">TV</hw><sound><wav>tv000001.wav</wav><wpr>!tE-!vE</wpr></sound><pr>ˈtē-ˈvē</pr><fl>noun</fl><et><it>t</it>ele<it>v</it>ision</et><def><date>1947</date><dt>:<sx>television</sx></dt></def></entry>
+	<entry id="TV[2]"><ew>TV</ew><subj>SY</subj><hw hindex="2">TV</hw><fl>abbreviation</fl><def><dt>transvestite</dt></def></entry>
+	<entry id="TV dinner"><ew>TV dinner</ew><subj>FD</subj><hw>TV dinner</hw><fl>noun</fl><et>from its saving the television viewer from having to interrupt viewing to prepare and serve a meal</et><def><date>1954</date><dt>:a quick-frozen packaged dinner (as of meat, potatoes, and a vegetable) that requires only heating before it is served</dt></def></entry>
+	<entry id="pay-TV"><ew>pay-TV</ew><subj>BR</subj><hw>pay–TV</hw><fl>noun</fl><def><date>circa 1956</date><dt>:a service providing noncommercial television programming (as recent movies and entertainment specials) by means of a scrambled signal to subscribers who are provided with a decoder <ca>called also <cat>pay television</cat></ca> <dx>compare <dxt>pay-cable</dxt> <dxt>subscription tv</dxt></dx></dt></def></entry>
+	<entry id="subscription TV"><ew>subscription TV</ew><subj>BR</subj><hw>subscription TV</hw><fl>noun</fl><def><date>1953</date><dt>:pay-TV that broadcasts programs directly over the air to customers provided with a special receiver <ca>called also <cat>subscription television</cat></ca> <dx>compare <dxt>pay-cable</dxt> <dxt>pay-tv</dxt></dx></dt></def></entry>
+</entry_list>

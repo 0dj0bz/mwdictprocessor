@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="percent[1]"><ew>percent</ew><subj>MA</subj><hw hindex="1">per*cent</hw><sound><wav>percen01.wav</wav><wpr>pur-!sent</wpr></sound><pr>pər-ˈsent</pr><fl>adverb</fl><et>earlier <it>per cent,</it> from <it>per</it> + Latin <it>centum</it> hundred <ma>hundred</ma></et><def><date>1568</date><dt>:in the hundred :of each hundred</dt></def></entry>
+	<entry id="percent[2]"><ew>percent</ew><subj>MA</subj><hw hindex="2">percent</hw><fl>noun</fl><in><il>plural</il> <if>percent</if> <il>or</il> <if>percents</if></in><def><date>1667</date> <sn>1</sn> <sin><spl>plural percent</spl></sin>  <sn>a</sn> <dt>:one part in a hundred</dt>  <sn>b</sn> <dt>:<sx>percentage</sx> <vi>a large <it>percent</it> of their income</vi></dt> <sn>2</sn> <sin><spl>percents plural</spl></sin> <ssl>British</ssl> <dt>:securities bearing a specified rate of interest</dt></def></entry>
+	<entry id="percent[3]"><ew>percent</ew><subj>MA-1</subj><hw hindex="3">percent</hw><fl>adjective</fl><def><date>1888</date> <sn>1</sn> <dt>:reckoned on the basis of a whole divided into 100 parts</dt> <sn>2</sn> <dt>:paying interest at a specified percent</dt></def></entry>
+	<entry id="hundred-percent[1]"><hw>hundred-percent[1]</hw><fl>teaser entry</fl></entry>
+	<entry id="hundred-percent[2]"><hw>hundred-percent[2]</hw><fl>teaser entry</fl></entry>
+</entry_list>

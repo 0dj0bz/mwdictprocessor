@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="phone[1]"><ew>phone</ew><subj>GR</subj><hw hindex="1">phone</hw><sound><wav>phone001.wav</wav><wpr>!fOn</wpr></sound><pr>ˈfōn</pr><fl>noun</fl><et>Greek <it>phōnē</it></et><def><date>circa 1866</date><dt>:a speech sound considered as a physical event without regard to its place in the sound system of a language</dt></def></entry>
+	<entry id="phone[2]"><ew>phone</ew><subj>EE-2#TL-1#AU-2</subj><hw hindex="2">phone</hw><fl>noun</fl><et>by shortening</et><def><date>1884</date> <sn>1</sn> <dt>:<sx>telephone</sx></dt> <sn>2</sn> <dt>:<sx>earphone</sx></dt></def></entry>
+	<entry id="phone[3]"><ew>phone</ew><subj>TL</subj><hw hindex="3">phone</hw><fl>verb</fl><in><if>phoned</if></in><in><if>phon*ing</if></in><def><date>1889</date><dt>:<sx>telephone</sx></dt></def></entry>
+	<entry id="-phone[1]"><ew>-phone</ew><subj>MU-1#EE-1#LN-2#TL-1</subj><hw hindex="1">-phone</hw><fl>noun combining form</fl><et>Greek <it>-phōnos</it> sounding, from <it>phōnē</it></et><def> <sn>1</sn> <dt>:sound <vi>homo<it>phone</it></vi> <un>often in names of musical instruments and sound-transmitting devices <vi>radio<it>phone</it></vi> <vi>xylo<it>phone</it></vi></un></dt> <sn>2</sn> <dt>:speaker of (a specified language) <vi>Franco<it>phone</it></vi></dt></def></entry>
+	<entry id="-phone[2]"><ew>-phone</ew><subj>LN</subj><hw hindex="2">-phone</hw><fl>adjective combining form</fl><et>French, from Greek <it>-phōnos</it></et><def><dt>:of or relating to a population that speaks (a specified language) <vi>Franco<it>phone</it></vi></dt></def></entry>
+	<entry id="phone card"><ew>phone card</ew><subj>TL</subj><hw>phone card</hw><fl>noun</fl><def><date>1982</date><dt>:a prepaid card used for making telephone calls</dt></def></entry>
+	<entry id="phone-in"><ew>phone-in</ew><subj>BR</subj><hw>phone–in</hw><sound><wav>phonei01.wav</wav><wpr>!fOn-+in</wpr></sound><pr>ˈfōn-ˌin</pr><fl>noun</fl><def><date>1963</date><dt>:a call-in show (as on radio)</dt></def></entry>
+	<entry id="phone sex"><ew>phone sex</ew><hw>phone sex</hw><fl>noun</fl><def><date>1982</date> <sn>1</sn> <dt>:prerecorded sex-oriented telephone messages available to those who call a commercial service</dt> <sn>2</sn> <dt>:sex-oriented telephone conversations (as with an operator employed by a commercial service or with a lover)</dt></def></entry>
+	<entry id="phone tag"><ew>phone tag</ew><hw>phone tag</hw><fl>noun</fl><def><date>1984</date><dt>:<sx>telephone tag</sx></dt></def></entry>
+	<entry id="cell phone"><ew>cell phone</ew><subj>TL</subj><hw>cell phone</hw><fl>noun</fl><def><date>1984</date><dt>:a portable usually cordless telephone for use in a cellular system</dt></def></entry>
+</entry_list>

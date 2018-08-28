@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="fax"><ew>fax</ew><subj>TL</subj><hw>fax</hw><sound><wav>fax00001.wav</wav><wpr>!faks</wpr></sound><pr>Ëˆfaks</pr><fl>noun</fl><et>by shortening &amp; alteration</et><def><date>1948</date> <sn>1</sn> <dt>:<sx>facsimile <sxn>2</sxn></sx></dt> <sn>2</sn> <dt>:a device used to send or receive facsimile communications</dt> <sn>3</sn> <dt>:a facsimile communication</dt></def><uro><ure>fax</ure> <fl>verb</fl></uro></entry>
+	<entry id="fax modem"><ew>fax modem</ew><subj>CP#TL</subj><hw>fax modem</hw><fl>noun</fl><def><date>1986</date><dt>:a computer peripheral capable of sending data to or receiving data from a fax machine or another computer especially over phone lines</dt></def></entry>
+</entry_list>

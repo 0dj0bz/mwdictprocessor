@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="we"><ew>we</ew><hw>we</hw><sound><wav>we000001.wav</wav><wpr>!wE</wpr></sound><pr>ˈwē</pr><fl>pronoun, plural in construction</fl><et>Middle English, from Old English <it>wē;</it> akin to Old High German <it>wir</it> we, Sanskrit <it>vayam</it></et><def><date>before 12th century</date> <sn>1</sn> <dt>:I and the rest of a group that includes me :you and I :you and I and another or others :I and another or others not including you <un>used as pronoun of the first person plural</un> <dx>compare <dxt>i</dxt> <dxt>our</dxt> <dxt>ours</dxt> <dxt>us</dxt></dx></dt> <sn>2</sn> <dt>:<sx>i</sx> <un>used by sovereigns</un> <un>used by writers to keep an impersonal character</un></dt></def></entry>
+	<entry id="We"><ew>We</ew><subj>CA</subj><hw>We</hw><vr><vl>or</vl> <va>Wed</va> </vr><fl>abbreviation</fl><def><dt>Wednesday</dt></def></entry>
+	<entry id="we'd"><ew>we'd</ew><hw>we'd</hw><sound><wav>wed0001w.wav</wav><wpr>!wEd</wpr></sound><pr>ˈwēd</pr><def><date>1603</date><dt>:we had :we would :we should</dt></def></entry>
+	<entry id="we'll"><ew>we'll</ew><hw>we'll</hw><sound><wav>well0002.wav</wav><wpr>!wE(u)l</wpr></sound><pr>ˈwēl, ˈwil</pr><def><date>1578</date><dt>:we will :we shall</dt></def></entry>
+	<entry id="we're"><ew>we're</ew><hw>we're</hw><sound><wav>were0003.wav</wav><wpr>!wur</wpr><wav>were0002.wav</wav><wpr>!wir</wpr><wav>were0001.wav</wav><wpr>!wE-ur</wpr></sound><pr>ˈwir, ˈwər, ˈwē-ər</pr><def><date>circa 1529</date><dt>:we are</dt></def></entry>
+	<entry id="we've"><ew>we've</ew><hw>we've</hw><sound><wav>weve0001.wav</wav><wpr>!wEv</wpr></sound><pr>ˈwēv</pr><def><date>1604</date><dt>:we have</dt></def></entry>
+	<entry id="us"><ew>us</ew><hw>us</hw><sound><wav>us000001.wav</wav><wpr>!us</wpr></sound><pr>ˈəs</pr><fl>pronoun</fl><cx><cl>objective case of</cl> <ct>we</ct></cx><et>Middle English, from Old English <it>ūs;</it> akin to Old High German <it>uns</it> us, Latin <it>nos</it></et></entry>
+</entry_list>

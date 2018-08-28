@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="beach[1]"><ew>beach</ew><subj>GE</subj><hw hindex="1">beach</hw><sound><wav>beach001.wav</wav><wpr>!bEch</wpr></sound><pr>ˈbēch</pr><fl>noun</fl><et>origin unknown</et><def><date>1535</date> <sn>1</sn> <dt>:shore pebbles :<sx>shingle</sx></dt> <sn>2 a</sn> <dt>:a shore of a body of water covered by sand, gravel, or larger rock fragments</dt>  <sn>b</sn> <dt>:a seashore area</dt></def></entry>
+	<entry id="beach[2]"><ew>beach</ew><subj>NA</subj><hw hindex="2">beach</hw><fl>verb</fl><def><vt>transitive verb</vt><date>1838</date> <sn>1</sn> <dt>:to run or drive ashore</dt> <sn>2</sn> <dt>:to strand on or as if on a beach</dt></def></entry>
+	<entry id="beach ball"><ew>beach ball</ew><subj>GA</subj><hw>beach ball</hw><fl>noun</fl><def><date>1940</date><dt>:a large inflated ball for use at the beach</dt></def></entry>
+	<entry id="beach buggy"><ew>beach buggy</ew><subj>AV</subj><hw>beach buggy</hw><fl>noun</fl><def><date>1943</date><dt>:<sx>dune buggy</sx></dt></def></entry>
+	<entry id="beach flea"><ew>beach flea</ew><subj>ZI</subj><hw>beach flea</hw><fl>noun</fl><def><date>1843</date><dt>:<sx>sand flea <sxn>2</sxn></sx></dt></def></entry>
+	<entry id="beach grass"><ew>beach grass</ew><subj>BG#EO</subj><hw>beach grass</hw><fl>noun</fl><def><date>1681</date><dt>:any of several tough strongly rooted grasses that grow on exposed sandy shores</dt> <sd>especially</sd> <dt>:any of a genus (<it>Ammophila</it>) of rhizomatous perennials widely planted to bind sandy slopes</dt></def></entry>
+	<entry id="beach pea"><ew>beach pea</ew><subj>BS</subj><hw>beach pea</hw><fl>noun</fl><def><date>1802</date><dt>:a wild pea (<it>Lathyrus japonicus</it> syn. <it>L. maritimus</it>) having tough roots and purple flowers that is found along sandy shores</dt></def></entry>
+	<entry id="beach plum"><ew>beach plum</ew><subj>BS#FD</subj><hw>beach plum</hw><fl>noun</fl><def><date>1741</date><dt>:a shrubby plum (<it>Prunus maritima</it>) having white flowers and growing chiefly along the northeastern coast of North America</dt> <sd>also</sd> <dt>:its edible usually dark purple fruit that is used especially in preserves</dt></def></entry>
+	<entry id="beach towel"><ew>beach towel</ew><hw>beach towel</hw><fl>noun</fl><def><date>1958</date><dt>:a very large usually brightly colored towel designed for use at the beach</dt></def></entry>
+	<entry id="free beach"><ew>free beach</ew><hw>free beach</hw><fl>noun</fl><def><date>1975</date><dt>:a beach at which nudity is permitted</dt></def></entry>
+</entry_list>

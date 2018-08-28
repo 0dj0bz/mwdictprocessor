@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="archive[1]"><ew>archive</ew><subj>IS</subj><hw hindex="1">ar*chive</hw><sound><wav>archiv02.wav</wav><wpr>!@r-+kIv</wpr></sound><pr>ˈär-ˌkīv</pr><fl>noun</fl><et>French &amp; Latin; French, from Latin <it>archivum,</it> from Greek <it>archeion</it> government house (in plural, official documents), from <it>archē</it> rule, government <ma>arch-</ma></et><def><date>1603</date> <sn>1</sn> <dt>:a place in which public records or historical documents are preserved</dt> <sd>also</sd> <dt>:the material preserved <un>often used in plural</un></dt> <sn>2</sn> <dt>:a repository or collection especially of information</dt></def></entry>
+	<entry id="archive[2]"><ew>archive</ew><subj>IS</subj><hw hindex="2">archive</hw><fl>verb</fl><in><if>ar*chived</if></in><in><if>ar*chiv*ing</if></in><def><vt>transitive verb</vt><date>1855</date><dt>:to file or collect in or as if in an archive <vi><it>archive</it> documents</vi> <vi><it>archived</it> tissue samples</vi></dt></def></entry>
+</entry_list>

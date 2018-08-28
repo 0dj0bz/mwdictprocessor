@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="Dec"><ew>Dec</ew><subj>CA</subj><hw>Dec</hw><fl>abbreviation</fl><def><dt>December</dt></def></entry>
+	<entry id="dec"><ew>dec</ew><subj>MD-1#AS-3#GZ-3#CG-3#NV-3#MA-5#MU-6</subj><hw>dec</hw><fl>abbreviation</fl><def> <sn>1</sn> <dt>deceased</dt> <sn>2</sn> <dt>declaration; declared</dt> <sn>3</sn> <dt>declination</dt> <sn>4</sn> <dt>decorated; decorative</dt> <sn>5</sn> <dt>decrease</dt> <sn>6</sn> <dt>decrescendo</dt></def></entry>
+	<entry id="deca-"><ew>deca-</ew><subj>MA#NB#WT</subj><hw>deca-</hw><vr><vl>or</vl> <va>dec-</va> <vl>or</vl> <va>deka-</va> <vl>or</vl> <va>dek-</va> </vr><fl>combining form</fl><et>Middle English, from Latin, from Greek <it>deka-, dek-,</it> from <it>deka</it> <ma>ten</ma></et><def><dt>:ten <vi><it>deca</it>syllabic</vi> <vi><it>deka</it>meter</vi></dt></def></entry>
+</entry_list>

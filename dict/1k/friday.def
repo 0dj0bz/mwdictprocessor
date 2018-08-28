@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="Friday"><ew>Friday</ew><subj>CA</subj><hw>Fri*day</hw><sound><wav>friday02.wav</wav><wpr>!frI-dE</wpr><wav>friday01.wav</wav><wpr>!frI-(+)dA</wpr></sound><pr>ˈfrī-(ˌ)dā, -dē</pr><fl>noun</fl><et>Middle English, from Old English <it>frīgedæg</it> (akin to Old High German <it>frīatag</it> Friday), from <it>*Frīg</it> Frigga + <it>dæg</it> day, prehistoric translation of Latin <it>dies Veneris</it> Venus' day</et><def><date>before 12th century</date><dt>:the sixth day of the week</dt></def><uro><ure>Fri*days</ure><sound><wav>friday03.wav</wav><wpr>!frI-(+)dAz</wpr></sound> <pr>-(ˌ)dāz, -dēz</pr> <fl>adverb</fl></uro></entry>
+	<entry id="gal Friday"><ew>gal Friday</ew><subj>JB</subj><hw>gal Friday</hw><fl>noun</fl><def><date>1958</date><dt>:<sx>girl friday</sx></dt></def></entry>
+	<entry id="girl Friday"><ew>girl Friday</ew><subj>JB</subj><hw>girl Friday</hw><fl>noun</fl><et><it>girl + Friday</it> (as in <it>man Friday</it>)</et><def><date>1940</date><dt>:a female assistant (as in an office) entrusted with a wide variety of tasks</dt></def></entry>
+	<entry id="Good Friday"><ew>Good Friday</ew><subj>CA#RC</subj><hw>Good Friday</hw><fl>noun</fl><et>from its special sanctity</et><def><date>13th century</date><dt>:the Friday before Easter observed in churches as the anniversary of the crucifixion of Christ and in some states of the United States as a legal holiday</dt></def></entry>
+	<entry id="man Friday"><ew>man Friday</ew><hw>man Friday</hw><fl>noun</fl><et><it>Friday,</it> servant in <it>Robinson Crusoe</it> (1719), novel by Daniel Defoe</et><def><date>circa 1809</date><dt>:an efficient and devoted aide or employee :a right-hand man</dt></def></entry>
+</entry_list>

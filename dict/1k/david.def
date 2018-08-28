@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="David"><ew>David</ew><subj>RJ-1</subj><hw>Da*vid</hw><sound><wav>david01g.wav</wav><wpr>d@-!vED</wpr></sound><pr>ˈdā-vəd</pr><fl>noun</fl><et>Hebrew <it>Dāwīdh</it></et><def><date>before 12th century</date> <sn>1</sn> <dt>:a Hebrew shepherd who became the second king of Israel in succession to Saul according to biblical accounts</dt> <sn>2</sn> <dt>:<sx>underdog <sxn>1</sxn></sx></dt></def><uro><ure>Da*vid*ic</ure><sound><wav>david002.wav</wav><wpr>du-!vi-dik</wpr></sound> <pr>də-ˈvi-dik, dā-</pr> <fl>adjective</fl></uro></entry>
+	<entry id="David"><ew>David</ew><hw>Da*vid</hw><sound><wav>bixdav04</wav></sound><pr>ˈdä-vət</pr><fl>biographical name</fl><def><dt>Gerard <it>ca</it> 1460–1523 Du. painter</dt></def></entry>
+	<entry id="David"><ew>David</ew><hw>Da*vid</hw><sound><wav>bixdav05</wav></sound><pr>dä-ˈvēd</pr><fl>biographical name</fl><def><dt>Jacques-Louis 1748–1825 Fr. painter</dt></def></entry>
+	<entry id="David"><ew>David</ew><hw>Da*vid</hw><sound><wav>david01g.wav</wav></sound><pr>dä-ˈvēt͟h</pr><fl>geographical name</fl><def><dt>town <g>W</g> Panama <it>pop</it> 77,057</dt></def></entry>
+	<entry id="David d'Angers"><ew>David d'Angers</ew><hw>David d'An*gers</hw><sound><wav>bixdav06.wav</wav></sound><pr>däⁿ-ˈzhā</pr><fl>biographical name</fl><def><dt>Pierre-Jean 1788–1856 Fr. sculptor</dt></def></entry>
+	<entry id="David I"><ew>David I</ew><hw>Da*vid I</hw><sound><wav>david001.wav</wav></sound><pr>ˈdā-vəd</pr><fl>biographical name</fl><def><dt><it>ca</it> 1082–1153 king of Scotland (1124–53)</dt></def></entry>
+	<entry id="Magen David"><ew>Magen David</ew><subj>RJ</subj><hw>Ma*gen Da*vid</hw><sound><wav>magend02.wav</wav><wpr>!mo-gun-!do-vid</wpr><wav>magend01.wav</wav><wpr>!mO-gun-!dA-vud</wpr></sound><vr><vl>or</vl> <va>Mo*gen David</va> <pr>ˈmȯ-gən-ˈdȯ-vid, -ˈdə-; ˈmō-gən-ˈdā-vəd</pr></vr><fl>noun</fl><et>Hebrew <it>māghēn Dāwīdh,</it> literally, shield of David</et><def><date>circa 1904</date><dt>:a hexagram used as a symbol of Judaism</dt></def></entry>
+	<entry id="Mogen David"><ew>Mogen David</ew><subj>RJ</subj><hw>Mogen David</hw><cx><cl>variant of</cl> <ct>magen david</ct></cx></entry>
+	<entry id="Star of David"><ew>Star of David</ew><grp>Star of</grp><grp>Star Da*vid</grp><grp>of Da*vid</grp><subj>RJ</subj><hw>Star of Da*vid</hw><sound><wav>starof02.wav</wav><wpr>!st@r-uv-!dA-vud</wpr></sound><pr>-ˈdā-vəd</pr><def><date>circa 1936</date><dt>:<sx>magen david</sx></dt></def></entry>
+</entry_list>

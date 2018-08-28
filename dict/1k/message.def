@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="message[1]"><ew>message</ew><hw hindex="1">mes*sage</hw><sound><wav>messag01.wav</wav><wpr>!me-sij</wpr></sound><pr>Ëˆme-sij</pr><fl>noun</fl><et>Middle English, from Anglo-French, from Medieval Latin <it>missaticum,</it> from Latin <it>missus,</it> past participle of <it>mittere</it></et><def><date>14th century</date> <sn>1</sn> <dt>:a communication in writing, in speech, or by signals</dt> <sn>2</sn> <dt>:a messenger's mission</dt> <sn>3</sn> <dt>:an underlying theme or idea</dt></def></entry>
+	<entry id="message[2]"><ew>message</ew><hw hindex="2">message</hw><fl>verb</fl><in><if>mes*saged</if></in><in><if>mes*sag*ing</if></in><def><vt>transitive verb</vt><date>1583</date> <sn>1</sn> <dt>:to send as a message or by <fw>messenger</fw></dt> <sn>2</sn> <dt>:to send a message to</dt><vt>intransitive verb</vt> <dt>:to communicate by message</dt></def></entry>
+	<entry id="message board"><ew>message board</ew><subj>CP#TL</subj><hw>message board</hw><fl>noun</fl><def><date>1973</date><dt>:<sx>bulletin board <sxn>2</sxn></sx></dt></def></entry>
+	<entry id="text message"><ew>text message</ew><subj>TL</subj><hw>text message</hw><fl>noun</fl><def><date>1978</date><dt>:a short message sent electronically usually from one cell phone to another</dt></def></entry>
+	<entry id="instant messaging"><ew>instant messaging</ew><subj>TL</subj><hw>instant messaging</hw><fl>noun</fl><def><date>1995</date><dt>:a means or system for transmitting electronic messages instantly</dt></def><uro><ure>instant message</ure> <fl>noun or verb</fl></uro></entry>
+</entry_list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="August"><ew>August</ew><subj>CA</subj><hw>Au*gust</hw><sound><wav>august01.wav</wav><wpr>!o-gust</wpr></sound><pr>ˈȯ-gəst</pr><fl>noun</fl><et>Middle English, from Old English, from Latin <it>Augustus,</it> from <it>Augustus</it> Caesar</et><def><date>before 12th century</date><dt>:the eighth month of the Gregorian calendar</dt></def></entry>
+	<entry id="august"><ew>august</ew><hw>au*gust</hw><sound><wav>august02.wav</wav><wpr>o-!gust</wpr><wav>august01.wav</wav><wpr>!o-(+)gust</wpr></sound><pr>ȯ-ˈgəst, ˈȯ-(ˌ)gəst</pr><fl>adjective</fl><et>Latin <it>augustus;</it> akin to Latin <it>augur</it></et><def><date>1581</date><dt>:marked by majestic dignity or grandeur <vi>her <it>august</it> lineage</vi></dt></def><uro><ure>au*gust*ly</ure> <fl>adverb</fl></uro><uro><ure>au*gust*ness</ure><sound><wav>august03.wav</wav><wpr>o-!gus(t)-nus</wpr></sound> <pr>ȯ-ˈgəs(t)-nəs, ˈȯ-(ˌ)gəs(t)-</pr> <fl>noun</fl></uro></entry>
+</entry_list>

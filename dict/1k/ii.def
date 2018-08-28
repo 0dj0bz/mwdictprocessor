@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="Charles I"><ew>Charles I</ew><hw>Charles I</hw><sound><wav>bixcha35.wav</wav><wpr>!ch@r(-u)lz</wpr></sound><vr><vl>or</vl> <va>II</va> </vr><fl>biographical name</fl><def><dt>823–877 <it>the Bald</it> king of France as <it>Charles I</it> (840–877); Holy Rom. emp. as <it>Charles II</it> (875–877)</dt></def></entry>
+	<entry id="type II error"><ew>type II error</ew><grp>type II</grp><grp>type error</grp><grp>II error</grp><subj>MA</subj><hw>type II error</hw><sound><wav>typetw01.wav</wav><wpr>!tIp-!tU-!er-ur</wpr></sound><fl>noun</fl><def><date>1947</date><dt>:acceptance of the null hypothesis in statistical testing when it is false</dt></def></entry>
+	<entry id="Abdulhamid II"><ew>Abdulhamid II</ew><hw>Ab*dül*ha*mīd II</hw><sound><wav>bixabd05.wav</wav></sound><pr>ˌab-ˌdül-hä-ˈmēd</pr><fl>biographical name</fl><def><dt>1842–1918 Ottoman sultan (1876–1909)</dt></def></entry>
+	<entry id="Abdullah II"><ew>Abdullah II</ew><hw>Abdullah II</hw><fl>biographical name</fl><def><dt>1962–     <it>great-grandson of prec.</it> king of Jordan (1999–    )</dt></def></entry>
+	<entry id="Agesilaus II"><ew>Agesilaus II</ew><hw>Ages*i*la*us II</hw><sound><wav>bixage02.wav</wav></sound><pr>ə-ˌje-sə-ˈlā-əs</pr><fl>biographical name</fl><def><dt><it>ca</it> 444–360 <sc>b.c.</sc> king of Sparta (399–360)</dt></def></entry>
+	<entry id="Alaric II"><ew>Alaric II</ew><hw>Alaric II</hw><fl>biographical name</fl><def><dt><it>d</it> 507 Visigoth king; issued legal code</dt></def></entry>
+	<entry id="Cambyses II"><ew>Cambyses II</ew><hw>Cam*by*ses II</hw><sound><wav>bixcam02.wav</wav></sound><pr>kam-ˈbī-(ˌ)sēz</pr><fl>biographical name</fl><def><dt><it>d</it> 522 <sc>b.c.</sc> <it>son of Cyrus II the Great</it> king of Persia (529–22)</dt></def></entry>
+	<entry id="Candra Gupta II"><ew>Candra Gupta II</ew><grp>Can*dra Gup*ta</grp><grp>Can*dra II</grp><grp>Gup*ta II</grp><hw>Can*dra Gup*ta II</hw><sound><wav>bixcan07.wav</wav></sound><pr>ˈkən-drə-ˈgu̇p-tə</pr><vr><vl>also</vl> <va>Chan*dra Gup*ta II</va>  <sound><wav>bixcan08.wav</wav></sound><pr>ˈchən-</pr> </vr><fl>biographical name</fl><def><dt>Indian ruler of Gupta dynasty (<it>ca</it> 380–<it>ca</it> 415)</dt></def></entry>
+	<entry id="Carol II"><ew>Carol II</ew><hw>Car*ol II</hw><sound><wav>bixcar25.wav</wav></sound><pr>ˈka-rəl</pr><fl>biographical name</fl><def><dt>1893–1953 king of Romania (1930–40)</dt></def></entry>
+	<entry id="Catherine II"><ew>Catherine II</ew><hw>Catherine II</hw><fl>biographical name</fl><def><dt>1729–1796 <it>the Great</it> empress of Russia (1762–96)</dt></def></entry>
+</entry_list>

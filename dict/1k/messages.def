@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+	<entry id="message[1]"><ew>message</ew><hw hindex="1">mes*sage</hw><sound><wav>messag01.wav</wav><wpr>!me-sij</wpr></sound><pr>Ëˆme-sij</pr><fl>noun</fl><et>Middle English, from Anglo-French, from Medieval Latin <it>missaticum,</it> from Latin <it>missus,</it> past participle of <it>mittere</it></et><def><date>14th century</date> <sn>1</sn> <dt>:a communication in writing, in speech, or by signals</dt> <sn>2</sn> <dt>:a messenger's mission</dt> <sn>3</sn> <dt>:an underlying theme or idea</dt></def></entry>
+	<entry id="message[2]"><ew>message</ew><hw hindex="2">message</hw><fl>verb</fl><in><if>mes*saged</if></in><in><if>mes*sag*ing</if></in><def><vt>transitive verb</vt><date>1583</date> <sn>1</sn> <dt>:to send as a message or by <fw>messenger</fw></dt> <sn>2</sn> <dt>:to send a message to</dt><vt>intransitive verb</vt> <dt>:to communicate by message</dt></def></entry>
+</entry_list>
