@@ -108,7 +108,7 @@ class MWDictProcessor:
                 print("entry_body: ", entry_body)
                 a, b, c, entry_body = self.parse_tag(next_tag, entry_body)
                     
-            return
+            return (open_entry_tag, entry_body, close_entry_tag, remnant)
         
             # TODO: build out the processing logic for this document level
             
@@ -144,18 +144,36 @@ class MWDictProcessor:
    
             
     def parse_entry_list(self, text=None):
+        
+        iter_ = 0
+        
         tag_list = ['entry']
         
         if (text is None or len(text)==0):
             return None
         
+        
+            
         open_entry_list_tag, entry_list_body, close_entry_list_tag, \
             remnant = self.parse_tag('entry_list', text)
+  
+        remnant = entry_list_body
+        
+        while len(remnant)>0:
+              
+            # now we have the tags enclosed in <entry_list> in the body.
+            # we parse that for each <entry> tag.
+        
+            open_entry_tag, entry_body, close_entry_tag, \
+                remnant = self.parse_entry(remnant)
+
+            print(11*'+')
+            print("iteration       : ", iter_)
+            print("open_entry_tag  : ", open_entry_tag)
+            print("entry_body      : ", entry_body)
+            print(11*'+')
             
-        # now we have the tags enclosed in <entry_list> in the body.
-        # we parse that for each <entry> tag.
-    
-        self.parse_entry(entry_list_body)
+            iter_ += 1
     
         return(open_entry_list_tag, entry_list_body, close_entry_list_tag, \
                remnant)
@@ -298,8 +316,8 @@ doc1 = """<?xml version="1.0" encoding="utf-8" ?>
 dp = MWDictProcessor()
 
 
-t_open, body, t_close, remnant = dp.parse_tag('entry_list', doc1)
+#t_open, body, t_close, remnant = dp.parse_tag('entry_list', doc1)
 
-print(dp.parse_entry(body))
+dp.parse_entry_list(doc1)
 
 # sn ssl dt vi
