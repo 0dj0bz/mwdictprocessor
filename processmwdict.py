@@ -22,15 +22,34 @@ class MWDictProcessor:
     def __init__(self):
         pass
 
+    def dtbl(self, tag):
+        
+        dt = { 
+                'entry_list' : self.parse_entry_list,
+                'entry'      : self.parse_entry,
+                'hw'         : self.parse_head_word,
+                'ew'         : self.parse_entry_word,
+                'dt'         : self.parse_definition_text,
+                'def'        : self.parse_definition,
+                'fl'         : self.parse_functional_label,
+                'dro'        : self.parse_def_runon,
+                'uro'        : self.parse_undef_runon,
+                
+              
+             }   
+        print("dtbl : ", tag)
+        
+        if tag in dt:
+            return dt[tag]
+        else:
+            print('dtbl: NOT IMPLEMENTED')
+            
+
     def peek_tag(self, text=None):
         startTag = r'(?:[<])([a-zA-Z0-9]*)( *[^>]*)(?:[>])(?:[\s]*)'
 
         m1 = re.search(startTag, text)
 
-#        print(11*'=')
-#        print("tag: ", m1.group(1))
-#
-#        print(11*'=')
         return m1.group(1)
        
         
@@ -47,21 +66,9 @@ class MWDictProcessor:
             remnant - leftover text after close tag
         """
         
-#        if (tag is None or text is None or len(text)==0):
-#            return None
-
         startTag = r'(<' +tag+' *[^>]*>)(?:[\s]*)'
         endTag   = r'(</'+tag+' *[^>]*>)(?:[\s]*)'
         
-#        start1,end1 = re.search(startTag, text).span()
-#        tag1 = re.search(startTag, text).group()
-#        start2,end2 = re.search(endTag, text).span()
-#        tag2= re.search(endTag, text).group()
-#        print(11*'=')
-#        print(re.search(endTag, text).group())
-#        print(11*'=')
-#        return text[start1:end1], text[end1:start2], text[start2:end2], text[end2:]
-
         m1 = re.search(startTag, text)
         m2 = re.search(endTag, text)
 
@@ -94,23 +101,40 @@ class MWDictProcessor:
         remnant = None
         tag_list = ['def', 'dro', 'et', 'ew', 'fl', 'grp', 'hw', 'pl', 'pr', 'pt', 'sound', 'uro']
         
+        entry_text = text
+        
         if (text is not None): 
+            # this is processing the <entry> tag itself.  DO NOT make the 
+            # mistake (again) of calling the dispatch table with the 'entry'
+            # tag; it over-recurses.
+            
             open_entry_tag, entry_body, close_entry_tag, remnant = \
                  self.parse_tag('entry', text)
+                 
+            entry_text = entry_body
                  
             print(11*'+')
             print(entry_body)
             print(11*'+')
             
+            # At some point, I'm going to forget why I didn't just implement
+            # parse_tag instead of implementing all of the specific functions
+            # for each tag.  At the time that I wrote this, I had no good
+            # way to embed the 'rules' of how to process each sublevel's 
+            # embedded tags.  I'm sure at some point in the future I'll put 
+            # some time into this and come up with some clever way to handle
+            # this, but now is not that time. - Rob.
+            
             while (len(entry_body) > 0):
                 next_tag = self.peek_tag(entry_body)
-                print("next_tag  : ", next_tag)
-                print("entry_body: ", entry_body)
                 a, b, c, entry_body = self.parse_tag(next_tag, entry_body)
+#                a, b, c, entry_body = \
+#                    self.dtbl(self.peek_tag(entry_body))(entry_body)
                     
-            return (open_entry_tag, entry_body, close_entry_tag, remnant)
+            return (open_entry_tag, entry_text, close_entry_tag, remnant)
         
             # TODO: build out the processing logic for this document level
+            # WARNING:  This code stops at this point!
             
             open_ew_tag, ew_body, close_ew_tag, ew_remnant = \
                 self.parse_tag('ew', entry_body)
@@ -120,12 +144,7 @@ class MWDictProcessor:
 
             open_def_tag, def_body, close_def_tag, def_remnant = \
                 self.parse_def(hw_remnant)
-#                based on entry_body, we extract the contents between <def>
-                
-            
-            #def_body_nt = re.sub('<[^<]+?>', '', def_body)
-            #filtered out all tags, only kept literal contents.
-        
+       
             print(11*'+')
             print("peek_tag: ", self.peek_tag(def_body))
             print("ew_body:  ", ew_body)
@@ -140,7 +159,7 @@ class MWDictProcessor:
             self.parse_entry(remnant)
  
         self.iter_ -= 1
-        return(open_entry_tag, entry_body, close_entry_tag)
+        return(open_entry_tag, entry_text, close_entry_tag)
    
             
     def parse_entry_list(self, text=None):
@@ -152,8 +171,6 @@ class MWDictProcessor:
         if (text is None or len(text)==0):
             return None
         
-        
-            
         open_entry_list_tag, entry_list_body, close_entry_list_tag, \
             remnant = self.parse_tag('entry_list', text)
   
@@ -164,9 +181,9 @@ class MWDictProcessor:
             # now we have the tags enclosed in <entry_list> in the body.
             # we parse that for each <entry> tag.
         
-            open_entry_tag, entry_body, close_entry_tag, \
-                remnant = self.parse_entry(remnant)
-
+            open_entry_tag, entry_body, close_entry_tag, remnant = \
+                self.dtbl(self.peek_tag(remnant))(remnant)
+#                remnant = self.parse_entry(remnant)
             print(11*'+')
             print("iteration       : ", iter_)
             print("open_entry_tag  : ", open_entry_tag)
@@ -207,7 +224,7 @@ class MWDictProcessor:
         
         return (open_tag, body, close_tag, remnant)
 
-    def parse_dt(self, text=None):
+    def parse_definition_text(self, text=None):
         open_tag = None
         body = None
         close_tag = None
@@ -226,7 +243,7 @@ class MWDictProcessor:
         
         return (open_tag, body, close_tag, remnant) 
     
-    def parse_def(self, text=None):
+    def parse_definition(self, text=None):
         open_tag = None
         body = None
         close_tag = None
@@ -270,6 +287,10 @@ class MWDictProcessor:
             self.parse_tag('dro', text)
             
         # TODO: parse any tags inside of body
+        # For the <def> tag, there may be multiple <sn><dt> entries. For
+        # these, order must be preserved and the individual <sn> values
+        # must be processed to preserve the correct hierarchy of sense values
+        # for sub-senses.
         
         return (open_tag, body, close_tag, remnant)
     
@@ -295,7 +316,7 @@ class MWDictProcessor:
             # first, save the source xml into a MWSourceDoc object for ref
             self.sourceDoc = MWSourceDoc(xml)
             # now, parse out each <entry> element inside of the <entry_list>
-            pass
+            self.dtbl(self.peek_tag(xml))()
  
  
  
@@ -320,4 +341,3 @@ dp = MWDictProcessor()
 
 dp.parse_entry_list(doc1)
 
-# sn ssl dt vi
