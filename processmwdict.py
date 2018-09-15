@@ -1,61 +1,106 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+processmwdict
+
+Module for creating data structures from XML returned
+from the Merriam-Webster Dictionary API
+
+"""
+
+# imports
 import re
 import uuid
 
+#------------------------------------------------------------------------------
 
 class MWSourceDoc:
+    """
+    TODO:
+    """
     docRefId = ""
     contents = None
-    
-    def __init__(self, doc = ""):
+
+    def __init__(self, doc=""):
         self.docRefId = uuid.uuid4()
         self.sourceDoc = doc
-        return None
-    
 
+
+
+#------------------------------------------------------------------------------
 
 class MWDictProcessor:
-    
+    """
+    class to process XML entries from the Merriam-Webster Dictionary API
+    """
+    # class member variables
     sourceDoc = None
     def_ = {}
     iter_ = 0
-    
+
     def __init__(self):
         pass
 
     def dtbl(self, tag):
-        
-        dt = { 
-                'entry_list' : self.parse_entry_list,
-                'entry'      : self.parse_entry,
-                'hw'         : self.parse_head_word,
-                'ew'         : self.parse_entry_word,
-                'dt'         : self.parse_definition_text,
-                'def'        : self.parse_definition,
-                'fl'         : self.parse_functional_label,
-                'dro'        : self.parse_def_runon,
-                'uro'        : self.parse_undef_runon,
-                
-              
-             }   
+        """
+        This is a dictionary that serves as a function dispatch for a given
+        XML tag in the response from the MW Dictionary API
+        """
+        dt = {
+            'cx'         : self.parse_cog_cross_entry,
+            'date'       : self.parse_date,
+            'def'        : self.parse_definition,
+            'dro'        : self.parse_def_runon,
+            'dt'         : self.parse_defining_text,
+            'dx'         : self.parse_directional_cross_ref,
+            'dxn'        : self.parse_directional_cross_ref_number,
+            'dxt'        : self.parse_directional_cross_ref_target,
+            'dx_def'     : self.parse_directional_cross_ref_definition,
+            'dx_ety'     : self.parse_directional_cross_ref_etymology,
+            'entry_list' : self.parse_entry_list,
+            'entry'      : self.parse_entry,
+            'et'         : self.parse_etymology,
+            'ew'         : self.parse_entry_word,
+            'fl'         : self.parse_functional_label,
+            'hw'         : self.parse_head_word,
+            'in'         : self.parse_inflection,
+            'lb'         : self.parse_label,
+            'pl'         : self.parse_paragraph_label,
+            'pr'         : self.parse_pronunciation,
+            'pt'         : self.parse_paragraph_text,
+            'sa'         : self.parse_synonym_see_additional,
+            'sd'         : self.parse_sense_divider,
+            'set'        : self.parse_sense_specific_etymology,
+            'sin'        : self.parse_sense_specific_inflection,
+            'slb'        : self.parse_sense_specific_label,
+            'sn'         : self.parse_sense_number,
+            'sound'      : self.parse_sound,
+            'sp'         : self.parse_sense_specific_pronunciation,
+            'ss'         : self.parse_synonym_see_cross_ref,
+            'ssl'        : self.parse_sense_subject_label,
+            'subj'       : self.parse_subject,
+            'svr'        : self.parse_sense_variant,
+            'uro'        : self.parse_undef_runon,
+            'us'         : self.parse_usage,
+            'vr'         : self.parse_variant,
+            'vt'         : self.parse_verb_divider,
+            'wav'        : self.parse_wavefile_name,
+            'wpr'        : self.parse_wavefile_pronunciation,
+        }
+
         print("dtbl : ", tag)
-        
+
         if tag in dt:
             return dt[tag]
         else:
             print('dtbl: NOT IMPLEMENTED')
-            
+            return None
 
-    def peek_tag(self, text=None):
-        startTag = r'(?:[<])([a-zA-Z0-9]*)( *[^>]*)(?:[>])(?:[\s]*)'
 
-        m1 = re.search(startTag, text)
 
-        return m1.group(1)
-       
-        
     def parse_tag(self, tag=None, text=None):
-        """ 
-        parse_tag - returns the contents of the XML tag provided 
+        """
+        parse_tag - returns the contents of the XML tag provided
         params:
             tag - the XML tag to processs
             text - the XML docment to process
@@ -65,20 +110,191 @@ class MWDictProcessor:
             end_tag - the closing XML tag and any attributes
             remnant - leftover text after close tag
         """
-        
+
         startTag = r'(<' +tag+' *[^>]*>)(?:[\s]*)'
-        endTag   = r'(</'+tag+' *[^>]*>)(?:[\s]*)'
-        
+        endTag = r'(</'+tag+' *[^>]*>)(?:[\s]*)'
+
         m1 = re.search(startTag, text)
         m2 = re.search(endTag, text)
 
-        print(11*'=')
-        print(m1.group(1))
-        print(m2.group(1))
-        print(11*'=')
-        return m1.group(1), text[m1.end():m2.start()], m2.group(1), text[m2.end():]
+        return m1.group(1), text[m1.end():m2.start()], m2.group(1), \
+            text[m2.end():]
 
+
+    def parse_cog_cross_entry(self, text=None):
+        """
+        """
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['cl', 'ct', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('cx', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_date(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+        if (text is None or len(text) == 0):
+            return None
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('date', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+
+    def parse_defining_text(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['ca', 'dx', 'math', 'sx', 'un', 'vi']
+
+        if (text is None or len(text) == 0):
+            return None
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('dt', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+
+    def parse_definition(self, text=None):
+#        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['date', 'dt', 'sd', 'sin', 'sn', 'ssl', 'us', 'vt']
+
+        if (text is None or len(text) == 0):
+            return None
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('def', text)
+
+        # TODO: parse any tags inside of body
+        
+        while len(body) > 0:
+            next_tag = self.peek_tag(body.lstrip().rstrip())
             
+            if len(next_tag) == 0:
+                break
+            
+            print('parse_definition - peek_tag: ', next_tag)
+            
+            open_tag, body, close_tag, remnant = \
+                self.parse_tag(next_tag, text)
+           
+
+        return (open_tag, body, close_tag, remnant)
+
+
+
+
+    def parse_def_runon(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['def', 'drp', 'et', 'vr']
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('dro', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_directional_cross_ref(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['dxt', 'it', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('dx', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_directional_cross_ref_definition(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['dxt', 'it', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('dx_def', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_directional_cross_ref_etymology(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['dxt', 'it', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('dx_ety', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_directional_cross_ref_number(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('dxn', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+
+    def parse_directional_cross_ref_target(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['dxn', 'inf', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('dxt', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
 
     def parse_entry(self, text=None):
         """
@@ -87,114 +303,132 @@ class MWDictProcessor:
             <hw>    - this is the head word for the entry
             <fl>    - this is the part of speech
             <def>   - this is the collection of definitions for this entry
-            <dro>   - these are the defined multi-word run-on word sets with def
+            <dro>   - these are the defined multi-word run-on wordsets with def
             <uro>   - these are the undef. multi-word run-on sets w/o defs
             <pr>    - pronunciation
             <sound> - .wav file with pronunciation of word
         """
-#        if (text is None or len(text)==0):
-#            return None, None, None
-        
+
         open_entry_tag = None
         entry_body = None
         close_entry_tag = None
         remnant = None
-        tag_list = ['def', 'dro', 'et', 'ew', 'fl', 'grp', 'hw', 'pl', 'pr', 'pt', 'sound', 'uro']
-        
+        tag_list = ['ahw', 'def', 'dro', 'et', 'ew', 'fl', 'grp', 'hw', 'pl', 
+                    'pr', 'pt', 'sound', 'subj', 'uro']
+
         entry_text = text
-        
-        if (text is not None): 
-            # this is processing the <entry> tag itself.  DO NOT make the 
+
+        if text is not None:
+            # this is processing the <entry> tag itself.  DO NOT make the
             # mistake (again) of calling the dispatch table with the 'entry'
             # tag; it over-recurses.
-            
+
             open_entry_tag, entry_body, close_entry_tag, remnant = \
                  self.parse_tag('entry', text)
-                 
+
             entry_text = entry_body
-                 
-            print(11*'+')
-            print(entry_body)
-            print(11*'+')
-            
+
             # At some point, I'm going to forget why I didn't just implement
             # parse_tag instead of implementing all of the specific functions
             # for each tag.  At the time that I wrote this, I had no good
-            # way to embed the 'rules' of how to process each sublevel's 
-            # embedded tags.  I'm sure at some point in the future I'll put 
+            # way to embed the 'rules' of how to process each sublevel's
+            # embedded tags.  I'm sure at some point in the future I'll put
             # some time into this and come up with some clever way to handle
             # this, but now is not that time. - Rob.
-            
-            while (len(entry_body) > 0):
-                next_tag = self.peek_tag(entry_body)
-                a, b, c, entry_body = self.parse_tag(next_tag, entry_body)
-#                a, b, c, entry_body = \
-#                    self.dtbl(self.peek_tag(entry_body))(entry_body)
-                    
-            return (open_entry_tag, entry_text, close_entry_tag, remnant)
-        
-            # TODO: build out the processing logic for this document level
-            # WARNING:  This code stops at this point!
-            
-            open_ew_tag, ew_body, close_ew_tag, ew_remnant = \
-                self.parse_tag('ew', entry_body)
-                
-            open_hw_tag, hw_body, close_hw_tag, hw_remnant = \
-                self.parse_tag('hw', ew_remnant)
 
-            open_def_tag, def_body, close_def_tag, def_remnant = \
-                self.parse_def(hw_remnant)
-       
-            print(11*'+')
-            print("peek_tag: ", self.peek_tag(def_body))
-            print("ew_body:  ", ew_body)
-            print("hw_body:  ", hw_body)
-            print("def_body: ", def_body)
-            print(11*'+')
-            print("iter_: ", self.iter_)
-            
- 
-        if (remnant is not None and len(remnant)>0): 
-            self.iter_ += 1
-            self.parse_entry(remnant)
- 
-        self.iter_ -= 1
-        return(open_entry_tag, entry_text, close_entry_tag)
-   
-            
+            while len(entry_body.lstrip().rstrip()) > 0:
+                next_tag = self.peek_tag(entry_body.lstrip().rstrip())
+                
+                if len(next_tag) == 0:
+                    break
+                
+                print('parse_entry - peek_tag: ', next_tag)
+
+                a, b, c, entry_body = \
+                    self.dtbl(self.peek_tag(entry_body.lstrip().rstrip())) \
+                    (entry_body.lstrip().rstrip())
+
+        return (open_entry_tag, entry_text, close_entry_tag, remnant)
+
+
+
     def parse_entry_list(self, text=None):
-        
+
         iter_ = 0
-        
+
         tag_list = ['entry']
-        
-        if (text is None or len(text)==0):
+
+        if (text is None or len(text) == 0):
             return None
-        
+
         open_entry_list_tag, entry_list_body, close_entry_list_tag, \
             remnant = self.parse_tag('entry_list', text)
-  
+
         remnant = entry_list_body
-        
-        while len(remnant)>0:
-              
+
+        while len((remnant.lstrip()).rstrip()) > 0:
+
             # now we have the tags enclosed in <entry_list> in the body.
             # we parse that for each <entry> tag.
-        
-            open_entry_tag, entry_body, close_entry_tag, remnant = \
-                self.dtbl(self.peek_tag(remnant))(remnant)
-#                remnant = self.parse_entry(remnant)
-            print(11*'+')
-            print("iteration       : ", iter_)
-            print("open_entry_tag  : ", open_entry_tag)
-            print("entry_body      : ", entry_body)
-            print(11*'+')
+            next_tag = self.peek_tag(remnant.lstrip().rstrip())
             
+            if len(next_tag) == 0:
+                break
+            
+            print('parse_entry_list - peek_tag: ', 
+                  self.peek_tag(remnant.lstrip().rstrip()))
+
+            open_entry_tag, entry_body, close_entry_tag, remnant = \
+                self.dtbl(self.peek_tag(remnant.lstrip().rstrip())) \
+                (remnant.lstrip().rstrip())
+
             iter_ += 1
-    
+
         return(open_entry_list_tag, entry_list_body, close_entry_list_tag, \
                remnant)
-        
+
+    def parse_entry_word(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('ew', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_etymology(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['it', 'ma', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('et', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_functional_label(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('fl', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
 
     def parse_head_word(self, text=None):
         open_tag = None
@@ -205,12 +439,26 @@ class MWDictProcessor:
 
         open_tag, body, close_tag, remnant = \
             self.parse_tag('hw', text)
-            
+
         # TODO: parse any tags inside of body
-        
+
         return (open_tag, body, close_tag, remnant)
-    
-    def parse_entry_word(self, text=None):
+
+    def parse_inflection(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['if', 'il', 'pr', ]
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('in', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_label(self, text=None):
         open_tag = None
         body = None
         close_tag = None
@@ -218,82 +466,256 @@ class MWDictProcessor:
         tag_list = []
 
         open_tag, body, close_tag, remnant = \
-            self.parse_tag('ew', text)
-            
+            self.parse_tag('lb', text)
+
         # TODO: parse any tags inside of body
-        
+
         return (open_tag, body, close_tag, remnant)
 
-    def parse_definition_text(self, text=None):
-        open_tag = None
-        body = None
-        close_tag = None
-        remnant = None
-        tag_list = ['ca', 'dx', 'sx', 'un', 'vi' ]
-
-
-        open_tag, body, close_tag, remnant = \
-            self.parse_tag('def', text)
-            
-        # TODO: parse any tags inside of body
-        # For the <def> tag, there may be multiple <sn><dt> entries. For
-        # these, order must be preserved and the individual <sn> values
-        # must be processed to preserve the correct hierarchy of sense values
-        # for sub-senses.
-        
-        return (open_tag, body, close_tag, remnant) 
-    
-    def parse_definition(self, text=None):
-        open_tag = None
-        body = None
-        close_tag = None
-        remnant = None
-        tag_list = ['date', 'dt', 'sin', 'sn', 'ssl', 'us' ]
-
-
-        open_tag, body, close_tag, remnant = \
-            self.parse_tag('def', text)
-            
-        # TODO: parse any tags inside of body
-        # For the <def> tag, there may be multiple <sn><dt> entries. For
-        # these, order must be preserved and the individual <sn> values
-        # must be processed to preserve the correct hierarchy of sense values
-        # for sub-senses.
-        
-        return (open_tag, body, close_tag, remnant)
-    
-    def parse_functional_label(self, text=None):
+    def parse_paragraph_label(self, text=None):
         open_tag = None
         body = None
         close_tag = None
         remnant = None
         tag_list = []
 
+
         open_tag, body, close_tag, remnant = \
-            self.parse_tag('fl', text)
-            
+            self.parse_tag('pl', text)
+
         # TODO: parse any tags inside of body
-        
+
         return (open_tag, body, close_tag, remnant)
-    
-    def parse_def_runon(self, text=None):
+
+    def parse_paragraph_text(self, text=None):
         open_tag = None
         body = None
         close_tag = None
         remnant = None
-        tag_list = ['def', 'drp', 'et', 'vr']
+        tag_list = []
+
 
         open_tag, body, close_tag, remnant = \
-            self.parse_tag('dro', text)
-            
+            self.parse_tag('pt', text)
+
         # TODO: parse any tags inside of body
-        # For the <def> tag, there may be multiple <sn><dt> entries. For
-        # these, order must be preserved and the individual <sn> values
-        # must be processed to preserve the correct hierarchy of sense values
-        # for sub-senses.
-        
+
         return (open_tag, body, close_tag, remnant)
-    
+
+
+    def parse_pronunciation(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('pr', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_sense_divider(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['snp', ]
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sd', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+
+    def parse_sense_number(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['snp', ]
+
+#        print('parse_sense_number: text: ', text)
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sn', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_sense_specific_etymology(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['it', 'ma', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('set', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_sense_specific_inflection(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['if', 'il', 'pr', 'spl',  ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sin', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_sense_specific_label(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('slb', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_sense_specific_pronunciation(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sp', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_sense_subject_label(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('ssl', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+
+    def parse_sense_variant(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['vl', 'va', 'pr', 'vpl', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('svr', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+
+    def parse_sound(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['wav', 'wpr']
+
+
+
+        # TODO: parse any tags inside of body
+
+        if (text is None or len(text) == 0):
+            return None
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sound', text)
+
+        remnant = body
+
+        while len((remnant.lstrip()).rstrip()) > 0:
+
+            # now we have the tags enclosed in <entry_list> in the body.
+            # we parse that for each <entry> tag.
+
+            open_tag, body, close_tag, remnant = \
+                self.dtbl(self.peek_tag(remnant))(remnant)
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_subject(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('subj', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_synonym_see_cross_ref(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('ss', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+
+    def parse_synonym_see_additional(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sa', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
     def parse_undef_runon(self, text=None):
         open_tag = None
         body = None
@@ -303,13 +725,98 @@ class MWDictProcessor:
 
         open_tag, body, close_tag, remnant = \
             self.parse_tag('uro', text)
-            
+
         # TODO: parse any tags inside of body
-        
+
         return (open_tag, body, close_tag, remnant)
-    
+
+    def parse_usage(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('us', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_variant(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['va', 'vl', 'pr', 'sound', ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('vr', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_verb_divider(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['vi',  ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('vt', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_wavefile_name(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('wav', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def parse_wavefile_pronunciation(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['vi',  ]
+
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('wpr', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant)
+
+    def peek_tag(self, text=None):
+        startTag = r'(?:[<])([a-zA-Z0-9]*)( *[^>]*)(?:[>])(?:[\s]*)'
+
+        m1 = re.search(startTag, text.lstrip().rstrip())
+
+        if m1 is not None:
+            return m1.group(1)
+        else:
+            return ''
+
     def process_xml(self, xml=None):
-        
+
         if xml is None:
             return self.def_
         else:
@@ -317,10 +824,12 @@ class MWDictProcessor:
             self.sourceDoc = MWSourceDoc(xml)
             # now, parse out each <entry> element inside of the <entry_list>
             self.dtbl(self.peek_tag(xml))()
- 
- 
- 
-doc1 = """<?xml version="1.0" encoding="utf-8" ?>
+
+# end class MWDictProcessor
+#------------------------------------------------------------------------------
+
+
+DOC1 = """<?xml version="1.0" encoding="utf-8" ?>
 <entry_list version="1.0">
 	<entry id="bat[1]"><ew>bat</ew><subj>SB-3a#SC-3b#SP-3c#SB-4#TX-5</subj><hw hindex="1">bat</hw><sound><wav>bat00001.wav</wav><wpr>!bat</wpr></sound><pr>ˈbat</pr><fl>noun</fl><et>Middle English, from Old English <it>batt</it></et><def><date>before 12th century</date> <sn>1</sn> <dt>:a stout solid stick :<sx>club</sx></dt> <sn>2</sn> <dt>:a sharp blow :<sx>stroke</sx></dt> <sn>3 a</sn> <dt>:a usually wooden implement used for hitting the ball in various games</dt> <sn>b</sn> <dt>:a paddle used in various games (as table tennis)</dt> <sn>c</sn> <dt>:the short whip used by a jockey</dt> <sn>4 a</sn> <dt>:<sx>batsman</sx> <sx>batter</sx> <vi>a right-handed <it>bat</it></vi></dt> <sn>b</sn> <dt>:a turn at batting <un>usually used in the phrase <it>at bat</it></un></dt> <sn>c</sn> <dt>:hitting ability <vi>we need his <it>bat</it> in the lineup</vi></dt> <sn>5</sn> <dt>:<sx>batt</sx></dt> <sn>6</sn> <ssl>British</ssl> <dt>:rate of speed :<sx>gait</sx></dt> <sn>7</sn> <dt>:<sx>binge</sx></dt></def><dro><drp>off one's own bat</drp> <def><ssl>chiefly British</ssl> <dt>:through one's own efforts</dt></def></dro><dro><drp>off the bat</drp> <def><dt>:without delay :<sx>immediately</sx> <vi>recognized him right <it>off the bat</it></vi></dt></def></dro></entry>
 	<entry id="bat[2]"><ew>bat</ew><subj>SB-vt1#SB-vt2#SB-vi1</subj><hw hindex="2">bat</hw><fl>verb</fl><in><if>bat*ted</if></in><in><if>bat*ting</if></in><def><vt>transitive verb</vt><date>15th century</date> <sn>1</sn> <dt>:to strike or hit with or as if with a bat</dt> <sn>2 a</sn> <dt>:to advance (a base runner) by batting</dt> <sn>b</sn> <dt>:to have a batting average of</dt> <sn>3</sn> <dt>:to discuss at length :consider in detail</dt><vt>intransitive verb</vt> <sn>1 a</sn> <dt>:to strike or hit a ball with a bat</dt> <sn>b</sn> <dt>:to take one's turn at bat</dt> <sn>2</sn> <dt>:to wander aimlessly</dt></def></entry>
@@ -334,10 +843,9 @@ doc1 = """<?xml version="1.0" encoding="utf-8" ?>
 	<entry id="bat mitzvah[2]"><ew>bat mitzvah</ew><subj>RJ</subj><hw hindex="2">bat mitzvah</hw><vr><vl>also</vl> <va>bas mitzvah</va> </vr><fl>verb</fl><in><if>bat mitz*vahed</if> <il>also</il> <if>bas mitz*vahed</if></in><in><if>bat mitz*vah*ing</if> <il>also</il> <if>bas mitz*vah*ing</if></in><def><vt>transitive verb</vt><date>1976</date><dt>:to administer the ceremony of bat mitzvah to</dt></def></entry>
 </entry_list>"""
 
-dp = MWDictProcessor()
+DP = MWDictProcessor()
 
 
 #t_open, body, t_close, remnant = dp.parse_tag('entry_list', doc1)
 
-dp.parse_entry_list(doc1)
-
+DP.parse_entry_list(DOC1)
