@@ -66,8 +66,10 @@ class MWDictProcessor:
             'et'         : self.parse_etymology,
             'ew'         : self.parse_entry_word,
             'fl'         : self.parse_functional_label,
+            'fw'         : self.parse_featured_word,
             'hw'         : self.parse_head_word,
             'in'         : self.parse_inflection,
+            'it'         : self.parse_italicized_text,
             'lb'         : self.parse_label,
             'pl'         : self.parse_paragraph_label,
             'pr'         : self.parse_pronunciation,
@@ -84,8 +86,11 @@ class MWDictProcessor:
             'ssl'        : self.parse_sense_subject_label,
             'subj'       : self.parse_subject,
             'svr'        : self.parse_sense_variant,
+            'sx'         : self.parse_synonymous_cross_ref,
+            'un'         : self.parse_usage_note,
             'uro'        : self.parse_undef_runon,
             'us'         : self.parse_usage,
+            'vi'         : self.parse_verbal_illustration,
             'vr'         : self.parse_variant,
             'vt'         : self.parse_verb_divider,
             'wav'        : self.parse_wavefile_name,
@@ -187,13 +192,33 @@ class MWDictProcessor:
         # if sense is None:
         
         
-        defdict = [{'sense' : self.cur_sense,
+        defdict = {'sense' : self.cur_sense,
                    'subsense' : self.cur_subsense,
-                   'def' : body},]
+                   'def' : body}
 
 #        print(defdict)
         
         # TODO: parse any tags inside of body
+#----
+# work in-process
+        body_text = body.lstrip().rstrip()
+
+        while len((body_text.lstrip()).rstrip()) > 0:
+
+        # TODO: parse any tags inside of body
+
+            next_tag = self.peek_tag(body_text.lstrip().rstrip())
+            
+            if len(next_tag) == 0:
+                break
+
+            open_tag, body_text, close_tag, remnant2, js = \
+                self.dtbl(next_tag)(body_text)
+                
+            body_text = remnant2
+            if len(js) > 0:
+                defdict.append(js)
+#---
 
         return (open_tag, body, close_tag, remnant, defdict)
 
@@ -263,6 +288,8 @@ class MWDictProcessor:
             body_text = remnant2
             if len(js) > 0:
                 defdict.append(js)
+                
+        defdict = {'defs':defdict}
 
         return (open_tag, body, close_tag, remnant.lstrip().rstrip(), defdict)
 
@@ -459,8 +486,10 @@ class MWDictProcessor:
                     
 #                defdict.append(js)
                 if len(js) > 0:
-                    defdict = js
+                    defdict.append(js)
 
+        defdict = {'entry':defdict}
+        
         return (open_entry_tag, entry_text, close_entry_tag, remnant, defdict)
 
 
@@ -517,6 +546,8 @@ class MWDictProcessor:
             self.parse_tag('ew', text)
 
         # TODO: parse any tags inside of body
+        
+        defdict = {'ew':body}
 
         return (open_tag, body, close_tag, remnant, defdict)
 
@@ -535,18 +566,36 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
-    def parse_functional_label(self, text=None):
+    def parse_featured_word(self, text=None):
         open_tag = None
         body = None
         close_tag = None
         remnant = None
         tag_list = []
         defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('fw', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+
+    def parse_functional_label(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = ""
         
         open_tag, body, close_tag, remnant = \
             self.parse_tag('fl', text)
 
         # TODO: parse any tags inside of body
+        
+        defdict = {'fl':body}
 
         return (open_tag, body, close_tag, remnant, defdict)
 
@@ -579,6 +628,23 @@ class MWDictProcessor:
         # TODO: parse any tags inside of body
 
         return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_italicized_text(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = ['if', 'il', 'pr', ]
+        defdict = []
+        
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('it', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+
 
     def parse_label(self, text=None):
         open_tag = None
@@ -843,6 +909,22 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
+    def parse_synonymous_cross_ref(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sx', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+
     def parse_synonym_see_cross_ref(self, text=None):
         open_tag = None
         body = None
@@ -903,6 +985,22 @@ class MWDictProcessor:
         # TODO: parse any tags inside of body
 
         return (open_tag, body, close_tag, remnant, defdict)
+    
+    def parse_usage_note(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('un', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+    
 
     def parse_variant(self, text=None):
         open_tag = None
@@ -929,6 +1027,22 @@ class MWDictProcessor:
 
         open_tag, body, close_tag, remnant = \
             self.parse_tag('vt', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+
+    def parse_verbal_illustration(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('vi', text)
 
         # TODO: parse any tags inside of body
 
