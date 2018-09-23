@@ -194,7 +194,7 @@ class MWDictProcessor:
         
         defdict = {'sense' : self.cur_sense,
                    'subsense' : self.cur_subsense,
-                   'def' : body}
+                   'def' : body }
 
 #        print(defdict)
         
@@ -217,7 +217,12 @@ class MWDictProcessor:
                 
             body_text = remnant2
             if len(js) > 0:
-                defdict.append(js)
+                
+                if next_tag == 'vi':
+                    if 'vi' not in defdict:
+                        defdict['vi'] = []
+                    defdict['vi'].append(js)
+                
 #---
 
         return (open_tag, body, close_tag, remnant, defdict)
@@ -1045,7 +1050,25 @@ class MWDictProcessor:
             self.parse_tag('vi', text)
 
         # TODO: parse any tags inside of body
+        
+        body_text = body.lstrip().rstrip()
 
+#        while len((body_text.lstrip()).rstrip()) > 0:
+#
+#        # TODO: parse any tags inside of body
+#
+#            next_tag = self.peek_tag(body_text.lstrip().rstrip())
+#            
+#            if len(next_tag) == 0:
+#                break
+#
+#            open_tag, body_text, close_tag, remnant2, js = \
+#                self.dtbl(next_tag)(body_text)
+#                
+#            body_text = remnant2        
+
+        defdict = {'vi':body}
+        
         return (open_tag, body, close_tag, remnant, defdict)
 
     def parse_wavefile_name(self, text=None):
