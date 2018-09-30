@@ -10,8 +10,11 @@ from the Merriam-Webster Dictionary API
 
 # imports
 import inspect
+import os
 import re
+from stat import *
 import uuid
+
 
 #------------------------------------------------------------------------------
 
@@ -50,7 +53,14 @@ class MWDictProcessor:
         XML tag in the response from the MW Dictionary API
         """
         dt = {
+            'ahw'        : self.parse_alt_headword,
+            'art'        : self.parse_art,
+            'bold'       : self.parse_bold,
+            'ca'         : self.parse_called_also,
+            'cap'        : self.parse_cap,
+            'cat'        : self.parse_called_also_target,
             'cx'         : self.parse_cog_cross_entry,
+            'd'          : self.parse_d,
             'date'       : self.parse_date,
             'def'        : self.parse_definition,
             'dro'        : self.parse_def_runon,
@@ -66,18 +76,30 @@ class MWDictProcessor:
             'et'         : self.parse_etymology,
             'ew'         : self.parse_entry_word,
             'fl'         : self.parse_functional_label,
+            'formula'    : self.parse_formula,
             'fw'         : self.parse_featured_word,
+            'frac'       : self.parse_frac,
+            'g'          : self.parse_g,
+            'grp'        : self.parse_group,
             'hw'         : self.parse_head_word,
             'in'         : self.parse_inflection,
+            'inf'        : self.parse_inferior_subscript,
             'it'         : self.parse_italicized_text,
             'lb'         : self.parse_label,
+            'list'       : self.parse_list,
+            'math'       : self.parse_math,
+            'note'       : self.parse_note,
             'pl'         : self.parse_paragraph_label,
             'pr'         : self.parse_pronunciation,
             'pt'         : self.parse_paragraph_text,
+            'ri'         : self.parse_ri,
+            'rie'        : self.parse_rie,
             'sa'         : self.parse_synonym_see_additional,
+            'sc'         : self.parse_small_caps,
             'sd'         : self.parse_sense_divider,
             'set'        : self.parse_sense_specific_etymology,
             'sin'        : self.parse_sense_specific_inflection,
+            'sl'         : self.parse_status_label,
             'slb'        : self.parse_sense_specific_label,
             'sn'         : self.parse_sense_number,
             'sound'      : self.parse_sound,
@@ -85,8 +107,12 @@ class MWDictProcessor:
             'ss'         : self.parse_synonym_see_cross_ref,
             'ssl'        : self.parse_sense_subject_label,
             'subj'       : self.parse_subject,
+            'suggestion' : self.parse_suggestion,
+            'sup'        : self.parse_superior_superscript,
             'svr'        : self.parse_sense_variant,
             'sx'         : self.parse_synonymous_cross_ref,
+            'sxn'        : self.parse_synonymous_cross_ref_sense_number,
+            'table'      : self.parse_table,
             'un'         : self.parse_usage_note,
             'uro'        : self.parse_undef_runon,
             'us'         : self.parse_usage,
@@ -97,9 +123,7 @@ class MWDictProcessor:
             'wpr'        : self.parse_wavefile_pronunciation,
         }
 
-        print("dtbl : ", tag, ' invoked from: ', inspect.getouterframes(inspect.currentframe())[1][3])
-        
-        
+        # print("dtbl : ", tag, ' invoked from: ', inspect.getouterframes(inspect.currentframe())[1][3])
 
         if tag in dt:
             return dt[tag]
@@ -128,9 +152,116 @@ class MWDictProcessor:
         m1 = re.search(startTag, text)
         m2 = re.search(endTag, text)
 
-        return m1.group(1), text[m1.end():m2.start()], m2.group(1), \
-            text[m2.end():]
+        #  handle empty tags e.g. <sin/>
+        if m2 is None: # this is most likely due to an empty tag
+            return m1.group(1), '', m1.group(1), text[m1.end():]
+        else:
+            return m1.group(1), text[m1.end():m2.start()], m2.group(1), \
+                text[m2.end():]
 
+    def parse_alt_headword(self, text=None):
+        """
+        """
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('ahw', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_art(self, text=None):
+        """
+        """
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('art', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_bold(self, text=None):
+        """
+        """
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('bold', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_cap(self, text=None):
+        """
+        """
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('cap', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+
+
+    def parse_called_also(self, text=None):
+        """
+        """
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('ca', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_called_also_target(self, text=None):
+        """
+        """
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('cat', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
 
     def parse_cog_cross_entry(self, text=None):
         """
@@ -144,6 +275,24 @@ class MWDictProcessor:
 
         open_tag, body, close_tag, remnant = \
             self.parse_tag('cx', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_d(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        if (text is None or len(text) == 0):
+            return None
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('d', text)
 
         # TODO: parse any tags inside of body
 
@@ -586,6 +735,36 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
+    def parse_formula(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('formula', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_frac(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('frac', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
 
     def parse_functional_label(self, text=None):
         open_tag = None
@@ -604,6 +783,39 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
+    def parse_g(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = ""
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('g', text)
+
+        # TODO: parse any tags inside of body
+
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+
+    def parse_group(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = ""
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('grp', text)
+
+        # TODO: parse any tags inside of body
+
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
     def parse_head_word(self, text=None):
         open_tag = None
         body = None
@@ -614,6 +826,21 @@ class MWDictProcessor:
         
         open_tag, body, close_tag, remnant = \
             self.parse_tag('hw', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_inferior_subscript(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('inf', text)
 
         # TODO: parse any tags inside of body
 
@@ -633,6 +860,7 @@ class MWDictProcessor:
         # TODO: parse any tags inside of body
 
         return (open_tag, body, close_tag, remnant, defdict)
+
 
     def parse_italicized_text(self, text=None):
         open_tag = None
@@ -661,6 +889,51 @@ class MWDictProcessor:
         
         open_tag, body, close_tag, remnant = \
             self.parse_tag('lb', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_list(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('list', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_math(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('math', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_note(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('note', text)
 
         # TODO: parse any tags inside of body
 
@@ -712,6 +985,36 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
+    def parse_ri(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('ri', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_rie(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('rie', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
     def parse_sense_divider(self, text=None):
         open_tag = None
         body = None
@@ -745,7 +1048,7 @@ class MWDictProcessor:
         sn_regex = '(?P<sense_no>[0-9]*)(?:[ ]*)(?P<subsense_no>[a-z]*)'
 
 
-        print('parse_sense_number - peek_tag: ', next_tag)
+        #print('parse_sense_number - peek_tag: ', next_tag)
 
         open_tag, body, close_tag, remnant = \
             self.parse_tag(next_tag, text)
@@ -767,8 +1070,8 @@ class MWDictProcessor:
             else:
                 self.cur_subsense = None
                 
-            print('sn - sense: ', self.cur_sense, ' subsense: ', 
-                  self.cur_subsense)
+            #print('sn - sense: ', self.cur_sense, ' subsense: ',
+            #      self.cur_subsense)
             
         return (open_tag, body, close_tag, remnant, defdict)
 
@@ -863,6 +1166,20 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
+    def parse_small_caps(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sc', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
 
     def parse_sound(self, text=None):
         open_tag = None
@@ -899,6 +1216,21 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
+    def parse_status_label(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sl', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
     def parse_subject(self, text=None):
         open_tag = None
         body = None
@@ -909,6 +1241,37 @@ class MWDictProcessor:
 
         open_tag, body, close_tag, remnant = \
             self.parse_tag('subj', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_suggestion(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('suggestion', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+
+    def parse_superior_superscript(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sup', text)
 
         # TODO: parse any tags inside of body
 
@@ -929,6 +1292,20 @@ class MWDictProcessor:
 
         return (open_tag, body, close_tag, remnant, defdict)
 
+    def parse_synonymous_cross_ref_sense_number(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('sxn', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
 
     def parse_synonym_see_cross_ref(self, text=None):
         open_tag = None
@@ -956,6 +1333,21 @@ class MWDictProcessor:
 
         open_tag, body, close_tag, remnant = \
             self.parse_tag('sa', text)
+
+        # TODO: parse any tags inside of body
+
+        return (open_tag, body, close_tag, remnant, defdict)
+
+    def parse_table(self, text=None):
+        open_tag = None
+        body = None
+        close_tag = None
+        remnant = None
+        tag_list = []
+        defdict = []
+
+        open_tag, body, close_tag, remnant = \
+            self.parse_tag('table', text)
 
         # TODO: parse any tags inside of body
 
@@ -1141,8 +1533,21 @@ DOC1 = """<?xml version="1.0" encoding="utf-8" ?>
 
 DP = MWDictProcessor()
 
+PATH = './dict/10k'
+for f in os.listdir(PATH):
 
-#t_open, body, t_close, remnant = dp.parse_tag('entry_list', doc1)
+    fqn = os.path.join(PATH, f)
+    mode = os.stat(fqn).st_mode
+    if S_ISREG(mode):
+        print('{} is a file'.format(f))
 
-a,b,c,d,e = DP.parse_entry_list(DOC1)
-print(e)
+        with open(fqn, 'r') as f:
+            doc = f.read()
+            a,b,c,d,e = DP.parse_entry_list(doc)
+            print(e)
+    else:
+        print('{} is not a file'.format(f))
+
+
+
+
