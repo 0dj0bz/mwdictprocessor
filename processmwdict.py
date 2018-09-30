@@ -345,21 +345,21 @@ class MWDictProcessor:
         m1 = re.search(ent, body)
         body = m1.group(1)
 
-        
-        defdict = {'sense' : self.cur_sense,
-                   'subsense' : self.cur_subsense,
-                   'def' : body }
+        # defdict = {'sense': self.cur_sense,
+        #            'subsense': self.cur_subsense,
+        #            'def': body}
+        defdict = {'sense': self.cur_sense,
+                   'subsense': self.cur_subsense}
 
 #        print(defdict)
         
         # TODO: parse any tags inside of body
-#----
-# work in-process
+
         body_text = body.lstrip().rstrip()
 
         while len((body_text.lstrip()).rstrip()) > 0:
 
-        # TODO: parse any tags inside of body
+            # TODO: parse any tags inside of body
 
             next_tag = self.peek_tag(body_text.lstrip().rstrip())
             
@@ -376,21 +376,25 @@ class MWDictProcessor:
                     if 'vi' not in defdict:
                         defdict['vi'] = []
                     defdict['vi'].append(js)
-                
-#---
 
-        return (open_tag, body, close_tag, remnant, defdict)
+                if next_tag == 'sx':
+                    if 'sx' not in defdict:
+                        defdict['sx'] = []
+                    defdict['sx'].append(js)
 
+        if len(body_text.lstrip().rstrip()) > 0:
+            defdict['def'] = body_text
+
+        return open_tag, body, close_tag, remnant, defdict
 
     def parse_definition(self, text=None):
-#        open_tag = None
         body = None
         close_tag = None
         remnant = None
         tag_list = ['date', 'dt', 'sd', 'sin', 'sn', 'ssl', 'us', 'vt']
         defdict = []
 
-        if (text is None or len(text) == 0):
+        if (text is None) or (len(text) == 0):
             return None
 
         # When we encounter a new <def> tag, go ahead and reset the sense
@@ -525,7 +529,7 @@ class MWDictProcessor:
         open_tag, body, close_tag, remnant = \
             self.parse_tag('dx', text)
 
-        # TODO: parse any tags inside of body
+        # TODO: copy similar logic from <sx> parser (parse_synonymous_cross_ref
 
         return (open_tag, body, close_tag, remnant, defdict)
 
@@ -1294,6 +1298,7 @@ class MWDictProcessor:
             self.parse_tag('sx', text)
 
         # TODO: parse any tags inside of body
+        defdict = {'sx':body}
 
         return (open_tag, body, close_tag, remnant, defdict)
 
