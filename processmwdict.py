@@ -339,7 +339,12 @@ class MWDictProcessor:
         # if sense is set and subsense is not None:
         
         # if sense is None:
-        
+
+        ent = '(?:^[:]*)(.*)'
+
+        m1 = re.search(ent, body)
+        body = m1.group(1)
+
         
         defdict = {'sense' : self.cur_sense,
                    'subsense' : self.cur_subsense,
@@ -1539,14 +1544,14 @@ for f in os.listdir(PATH):
     fqn = os.path.join(PATH, f)
     mode = os.stat(fqn).st_mode
     if S_ISREG(mode):
-        print('{} is a file'.format(f))
+        # print('{} is a file'.format(f))
 
         with open(fqn, 'r') as f:
             doc = f.read()
             a,b,c,d,e = DP.parse_entry_list(doc)
             print(e)
-    else:
-        print('{} is not a file'.format(f))
+    # else:
+    #     print('{} is not a file'.format(f))
 
 
 
