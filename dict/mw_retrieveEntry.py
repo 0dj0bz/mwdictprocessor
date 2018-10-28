@@ -28,10 +28,10 @@ outputext = ".def"
 
 base_querystr = uri_base + mw_resource + "/xml/"
 
-start_row = 21000
+start_row = 66000
 rows_processed = 0
 
-last_row = 31000
+last_row = 75000
 
 #r = requests.get(querystr, urllib.parse.urlencode(mw_apikey))
 
@@ -60,13 +60,18 @@ with open(wordfile_path, newline='') as csvfile:
         for word in words:
             querystr = base_querystr + word[0]
             print(querystr)
-            r = requests.get(querystr, urllib.parse.urlencode(mw_apikey))
-            
-            with open(outpath+word[0]+outputext, 'w') as outfile:
-                outfile.write(r.text)
+
+            try:
+                r = requests.get(querystr, urllib.parse.urlencode(mw_apikey))
                 
-            wc += 1
-            rows_processed += 1
+                with open(outpath+word[0]+outputext, 'w') as outfile:
+                    outfile.write(r.text)
+                    
+                wc += 1
+                rows_processed += 1
+
+            except:
+                pass
             
             # only process 1000 requests at a time per day
             if (wc >= 1000):
